@@ -1,0 +1,113 @@
+baseURL: http://openelc.org/
+languageCode: en-us
+title: OpenELC
+
+module:
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+disableKinds:
+- taxonomy
+- taxonomyTerm
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  openGraph: true
+  description: Open Enterprise Linux Collaboration
+  navbarlogo:
+    image: logos/hydrangea.svg
+    link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 112
+    # height: 28
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    title: Open Enterprise Linux Collaboration
+    subtitle: A collective effort to freely define, provide, and support Enterprise Linux for all.
+    buttontext: Join us on Slack
+    buttonlink: "https://join.slack.com/t/openelfworkspace/shared_invite/zt-20o2yblhw-7h3nlGbCZyLoMfu~PHEtSw"
+    # Hero image (from static/images/___)
+    image: illustrations/hydrangea-hero.svg
+    clientlogos:
+    - logo: ciq
+      url: https://ciq.com
+    - logo: oracle
+      url: https://www.oracle.com
+    - logo: suse
+      url: https://www.suse.com
+  navbar:
+  - title: About
+    url: /about
+  - title: News
+    url: /news
+  - title: Join
+    url: /join
+  section3:
+    title: Truly open code
+    subtitle: No subscriptions. No passwords. No barriers.
+    image: illustrations/openelf-git.png
+    buttonText: Browse the codebase
+    buttonLink: "#"
+  footer:
+    logo: hydrangea.svg
+    socialmediatitle: Follow Us
+    socialmedia:
+    - link: https://github.com/open-elc
+      icon: github
+    - link: https://fosstodon.org/@openelc
+      icon: twitter
+    - link: https://www.linkedin.com/company/openelc
+      icon: linkedin
+    quicklinks:
+      column1:
+        title: "About"
+        links:
+        - text: About
+          link: /about
+        - text: Volunteers & Staff
+          link: /volunteers-and-staff
+        - text: Associations
+          link: /associations
+        - text: Affiliates
+          link: /affiliates
+        - text: History
+          link: /history
+        - text: Privacy Policy
+          link: /privacy
+      column2:
+        title: "Board"
+        links:
+        - text: Board of Directors
+          link: /board/directors
+        - text: Minutes
+          link: /board/minutes
+        - text: Elections
+          link: /board/elections
+        - text: Organization & Operations
+          link: /about/organization
+        - text: Articles of Incorporation
+          link: /articles-of-incorporation
+        - text: Bylaws
+          link: /bylaws
+        - text: Conflict of Interest Policy
+          link: /conflict-of-interest-policy
+        - text: Board Member Agreement
+          link: /board/board-member-agreement
+      column3:
+        title: "Community"
+        links:
+        - text: Resources
+          link: /resources
+        - text: Join as an Individual
+          link: /join
+        - text: Join as an Organization
+          link: /join-organization
+        - text: Events
+          link: /events
+
