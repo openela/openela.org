@@ -1,6 +1,6 @@
-baseURL: http://openelc.org/
+baseURL: http://openela.org/
 languageCode: en-us
-title: OpenELC
+title: OpenELA
 
 module:
   imports:
@@ -17,7 +17,7 @@ markup:
 
 params:
   openGraph: true
-  description: Open Enterprise Linux Collaboration
+  description: Open Enterprise Linux Association
   navbarlogo:
     image: logos/hydrangea.svg
     link: /
@@ -28,10 +28,10 @@ params:
     name: "Open Sans"
     sizes: [400,600]
   hero:
-    title: Open Enterprise Linux Collaboration
+    title: Open Enterprise Linux Association
     subtitle: A collective effort to freely define, provide, and support Enterprise Linux for all.
     buttontext: Join us on Slack
-    buttonlink: "https://join.slack.com/t/openelfworkspace/shared_invite/zt-20o2yblhw-7h3nlGbCZyLoMfu~PHEtSw"
+    buttonlink: "https://join.slack.com/t/openela/shared_invite/zt-20o2yblhw-7h3nlGbCZyLoMfu~PHEtSw"
     # Hero image (from static/images/___)
     image: illustrations/hydrangea-hero.svg
     clientlogos:
@@ -51,7 +51,7 @@ params:
   section3:
     title: Truly open code
     subtitle: No subscriptions. No passwords. No barriers.
-    image: illustrations/openelf-git.png
+    image: illustrations/git-forge.png
     buttonText: Browse the codebase
     buttonLink: "#"
   footer:
@@ -60,9 +60,9 @@ params:
     socialmedia:
     - link: https://github.com/open-elc
       icon: github
-    - link: https://fosstodon.org/@openelc
+    - link: https://fosstodon.org/@openela
       icon: twitter
-    - link: https://www.linkedin.com/company/openelc
+    - link: https://www.linkedin.com/company/openela
       icon: linkedin
     quicklinks:
       column1:
