@@ -8740,3 +8740,8 @@ body #backtotop a {
   color: #cecece; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* temporary logo band fix */
+.tabs.is-centered li{width: 100%}
+.tabs.is-centered a{ max-width:25vw; padding:0; }
+.tabs.is-centered img{height:auto; height:4em;  object-fit:contain; max-height:30%}
