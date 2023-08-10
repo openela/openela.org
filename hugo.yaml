@@ -47,7 +47,7 @@ params:
   - title: Join
     url: /join
   - title: News
-    url: /news
+    url: /announcements
   section3:
     title: The Community Repository for Enteprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.

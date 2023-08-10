@@ -44,14 +44,14 @@ SUSE is a global leader in innovative, reliable and secure enterprise-grade open
 CIQ\
 Patricia Tantow\
 ptantow@ciq.com\
-1-415-724-4770\
+1-415-724-4770
 
 Oracle\
 Drew Smith\
 drew.j.smith@oracle.com\
-1-415-336-1103\
+1-415-336-1103
 
 SUSE\
 Sara Matheson\
 Sara.matheson@suse.com\
-+44 (0) 7960 191229\
++44 (0) 7960 191229
