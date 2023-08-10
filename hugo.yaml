@@ -30,8 +30,8 @@ params:
   hero:
     title: Open Enterprise Linux Association
     subtitle: OpenELA is a trade association of open source Enterprise Linux distribution developers
-    buttontext: Join the Community
-    buttonlink: /join
+    buttontext: Read The Announcement
+    buttonlink: /news/hello_world
     # Hero image (from static/images/___)
     image: illustrations/hydrangea-hero.svg
     clientlogos:

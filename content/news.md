@@ -1,5 +1,5 @@
 ---
-title: News
+title: OpenELA News
 include_footer: true
 sidebar: false
 ---
