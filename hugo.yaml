@@ -64,4 +64,11 @@ params:
       icon: twitter
     - link: https://www.linkedin.com/company/openela
       icon: linkedin
+    quicklinks:
+      column1:
+        title: ""
+      column2:
+        title: ""
+      column3:
+        title: ""
 

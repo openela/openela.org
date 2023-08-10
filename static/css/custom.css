@@ -1,0 +1,25 @@
+.hero-foot ul {
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.hero-foot li {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-foot li a{
+    border:none;
+}
+
+.hero-foot img.partner-logo {
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hero-foot .tabs {
+    display: inline-block;
+    width: 100%;
+}
