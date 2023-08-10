@@ -1,4 +1,4 @@
-baseURL: http://openela.org/
+baseURL: http://OpenELA.org/
 languageCode: en-us
 title: OpenELA
 
@@ -19,7 +19,7 @@ params:
   openGraph: true
   description: Open Enterprise Linux Association
   navbarlogo:
-    image: logos/hydrangea.svg
+    image: logos/openELA.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -29,11 +29,11 @@ params:
     sizes: [400,600]
   hero:
     title: Open Enterprise Linux Association
-    subtitle: A collective effort to freely define, provide, and support Enterprise Linux for all.
-    buttontext: Join us on Slack
-    buttonlink: "https://join.slack.com/t/openela/shared_invite/zt-20o2yblhw-7h3nlGbCZyLoMfu~PHEtSw"
+    subtitle: OpenELA is a trade association of open source Enterprise Linux distribution developers
+    buttontext: Join the Community
+    buttonlink: /join
     # Hero image (from static/images/___)
-    image: illustrations/hydrangea-hero.svg
+    image: logos/openELA.svg
     clientlogos:
     - logo: ciq
       url: https://ciq.com
@@ -44,70 +44,24 @@ params:
   navbar:
   - title: About
     url: /about
-  - title: News
-    url: /news
   - title: Join
     url: /join
+  - title: News
+    url: /news
   section3:
-    title: Truly open code
-    subtitle: No subscriptions. No passwords. No barriers.
+    title: The Community Repository for Enteprise Linux Sources
+    subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
     image: illustrations/git-forge.png
-    buttonText: Browse the codebase
-    buttonLink: "#"
+    buttonText: Learn More
+    buttonLink: "/about"
   footer:
-    logo: hydrangea.svg
+    logo: openELA.svg
     socialmediatitle: Follow Us
     socialmedia:
-    - link: https://github.com/open-elc
+    - link: https://github.com/openela
       icon: github
-    - link: https://fosstodon.org/@openela
+    - link: https://twitter.com/@openelaorg
       icon: twitter
     - link: https://www.linkedin.com/company/openela
       icon: linkedin
-    quicklinks:
-      column1:
-        title: "About"
-        links:
-        - text: About
-          link: /about
-        - text: Volunteers & Staff
-          link: /volunteers-and-staff
-        - text: Associations
-          link: /associations
-        - text: Affiliates
-          link: /affiliates
-        - text: History
-          link: /history
-        - text: Privacy Policy
-          link: /privacy
-      column2:
-        title: "Board"
-        links:
-        - text: Board of Directors
-          link: /board/directors
-        - text: Minutes
-          link: /board/minutes
-        - text: Elections
-          link: /board/elections
-        - text: Organization & Operations
-          link: /about/organization
-        - text: Articles of Incorporation
-          link: /articles-of-incorporation
-        - text: Bylaws
-          link: /bylaws
-        - text: Conflict of Interest Policy
-          link: /conflict-of-interest-policy
-        - text: Board Member Agreement
-          link: /board/board-member-agreement
-      column3:
-        title: "Community"
-        links:
-        - text: Resources
-          link: /resources
-        - text: Join as an Individual
-          link: /join
-        - text: Join as an Organization
-          link: /join-organization
-        - text: Events
-          link: /events
 
