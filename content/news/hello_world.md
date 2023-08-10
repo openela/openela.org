@@ -38,3 +38,20 @@ __Trademarks__: Oracle, Java, MySQL and NetSuite are registered trademarks of Or
 ## About SUSE
 
 SUSE is a global leader in innovative, reliable and secure enterprise-grade open source solutions, relied upon by more than 60% of the Fortune 500 to power their mission-critical workloads. The company behind Rancher, NeuVector and SUSE Linux Enterprise (SLE), SUSE collaborates with partners and communities to empower customers to innovate everywhere – from the data center to the cloud, to the edge and beyond. SUSE puts the “open” back in open source, giving customers the ability to tackle innovation challenges today and the freedom to evolve their strategy and solutions tomorrow. The company employs more than 2,400 people globally and is listed on the Frankfurt Stock Exchange. For more information, visit www.suse.com.
+
+## Media Contacts:
+
+CIQ\
+Patricia Tantow\
+ptantow@ciq.com\
+1-415-724-4770\
+
+Oracle\
+Drew Smith\
+drew.j.smith@oracle.com\
+1-415-336-1103\
+
+SUSE\
+Sara Matheson\
+Sara.matheson@suse.com\
++44 (0) 7960 191229\
