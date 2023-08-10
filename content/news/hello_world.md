@@ -10,11 +10,11 @@ __RENO, Nev., AUSTIN, Texas, and LUXEMBOURG—August 10, 2023__—CIQ, Oracle an
 
 The formation of OpenELA arises from Red Hat’s recent changes to RHEL source code availability. In response, CIQ, Oracle and SUSE are collaborating to deliver source code, tools and systems through OpenELA for the community.
 
-“Collaboration is critical to fostering innovation, which is why we welcome everyone to be part of this association and help us uphold open community standards,” said Thomas Di Giacomo, chief technology and product officer of SUSE. “SUSE is a strong believer in making choice happen. Together with the open source community we will redefine what it truly means to be open and deliver a stronger future for EL.” 
+“_Collaboration is critical to fostering innovation, which is why we welcome everyone to be part of this association and help us uphold open community standards,_” said Thomas Di Giacomo, chief technology and product officer of SUSE. “_SUSE is a strong believer in making choice happen. Together with the open source community we will redefine what it truly means to be open and deliver a stronger future for EL._” 
 
-“Today's announcement marks the beginning of a new era for EL,” said Gregory Kurtzer, CEO of CIQ. “With OpenELA, CIQ, Oracle and SUSE join forces with the open source community to ensure a stable and resilient future for both upstream and downstream communities to leverage Enterprise Linux."
+“_Today's announcement marks the beginning of a new era for EL,_” said Gregory Kurtzer, CEO of CIQ. “_With OpenELA, CIQ, Oracle and SUSE join forces with the open source community to ensure a stable and resilient future for both upstream and downstream communities to leverage Enterprise Linux._"
 
-“Many large organizations reached out to us to express the importance of community-driven source code for EL that can act as a starting point for compatible distributions,” said Wim Coekaerts, head of Oracle Linux development, Oracle. “OpenELA is our response to this need, and it represents a commitment to helping the open source community continue to develop compatible EL distributions.”
+“_Many large organizations reached out to us to express the importance of community-driven source code for EL that can act as a starting point for compatible distributions,_” said Wim Coekaerts, head of Oracle Linux development, Oracle. “_OpenELA is our response to this need, and it represents a commitment to helping the open source community continue to develop compatible EL distributions._”
 
 Starting later this year, OpenELA will provide sources necessary for downstreams compatible with RHEL to exist, with initial focus on RHEL versions EL8, EL9 and possibly EL7. The project is committed to ensuring the continued availability of OpenELA sources to the community indefinitely.
 
