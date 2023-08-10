@@ -49,7 +49,7 @@ params:
   - title: News
     url: /announcements
   section3:
-    title: The Community Repository for Enteprise Linux Sources
+    title: The Community Repository for Enterprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
     image: illustrations/git-forge.png
     buttonText: Learn More
