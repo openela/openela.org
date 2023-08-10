@@ -50,7 +50,7 @@ params:
     url: /join
   section3:
     title: Truly open code
-    subtitle: No subscriptions. No passwords. No barriers.
+    subtitle: No barriers.
     image: illustrations/git-forge.png
     buttonText: Browse the codebase
     buttonLink: "#"
