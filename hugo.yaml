@@ -33,7 +33,7 @@ params:
     buttontext: Join the Community
     buttonlink: /join
     # Hero image (from static/images/___)
-    image: logos/openELA.svg
+    image: illustrations/hydrangea-hero.svg
     clientlogos:
     - logo: ciq
       url: https://ciq.com
