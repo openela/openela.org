@@ -24,22 +24,24 @@ By welcoming other organizations and community members to join and contribute ac
 
 For more information about and to get involved with OpenELA, please visit www.OpenELA.org/join. 
 
+___This news release is also available in the newsrooms at <a target="_blank" href="https://ciq.com/press-release/ciq-oracle-and-suse-create-open-enterprise-linux-association-for-a-collaborative-and-open-future/">CIQ</a>, <a target="_blank" href="https://www.oracle.com/news/announcement/ciq-oracle-and-suse-create-open-enterprise-linux-association-for-a-collaborative-and-open-future-2023-08-10/">Oracle</a>, and <a target="_blank" href="https://www.suse.com/news/OpenELA-for-a-Collaborative-and-Open-Future">SUSE</a>.___
 
-## About CIQ
+---
+### About CIQ
 
 CIQ powers the next generation of software infrastructure, leveraging capabilities from enterprise, cloud, hyperscale and HPC. From the base operating system, through containers, orchestration, provisioning, computing, and up to cloud applications, CIQ works with every part of the technology stack to drive solutions for customers and communities with stable, scalable, secure production environments. CIQ is the founding support and services partner of Rocky Linux, and the creator of the next generation federated computing stack. For more information, please visit ciq.com.
 
-## About Oracle
+### About Oracle
 
 Oracle offers integrated suites of applications plus secure, autonomous infrastructure in the Oracle Cloud. For more information about Oracle (NYSE: ORCL), please visit us at www.oracle.com.
 
 __Trademarks__: Oracle, Java, MySQL and NetSuite are registered trademarks of Oracle Corporation. NetSuite was the first cloud company—ushering in the new era of cloud computing. 
 
-## About SUSE
+### About SUSE
 
 SUSE is a global leader in innovative, reliable and secure enterprise-grade open source solutions, relied upon by more than 60% of the Fortune 500 to power their mission-critical workloads. The company behind Rancher, NeuVector and SUSE Linux Enterprise (SLE), SUSE collaborates with partners and communities to empower customers to innovate everywhere – from the data center to the cloud, to the edge and beyond. SUSE puts the “open” back in open source, giving customers the ability to tackle innovation challenges today and the freedom to evolve their strategy and solutions tomorrow. The company employs more than 2,400 people globally and is listed on the Frankfurt Stock Exchange. For more information, visit www.suse.com.
 
-## Media Contacts:
+### Media Contacts:
 
 CIQ\
 Patricia Tantow\
