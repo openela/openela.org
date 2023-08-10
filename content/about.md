@@ -32,6 +32,14 @@ OpenELA is a collaboration created and upheld by CIQ, Oracle, and SUSE. Open Sou
 1. __Sustainability__: OpenELA is committed to providing long-term sustainability for all hosted projects, ensuring resilience, and viability for the foreseeable future.
 1. __Community Governance__: OpenELA will establish a transparent and inclusive community with representation from  contributors and stakeholders to have a say in the decision-making process and project direction.
 
+## Deliverables:
+
+* All sources necessary to achieve a 1:1 / bug-for-bug compatible version of EL which will be distributed via Git encouraging community collaboration
+* Security errata data
+* Compatibility guidelines for downstream distributions to test their build results
+* A branding kit for all downstream distributions and supporters
+* User and Administration Documentation (Oracle contribution)
+
 ## Governance
 
 OpenELA is in progress of becoming a Delaware 501(c)6 US non-profit entity and will be subject to the board of directors comprising both corporate and community members. The initial board of directors will include equal representation from our founding entities (CIQ, Oracle, and SUSE).
