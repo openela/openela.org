@@ -23,3 +23,13 @@
     display: inline-block;
     width: 100%;
 }
+
+.navbar.is-fresh .navbar-brand img {
+    max-height: 48px !important;
+    height: 48px;
+}
+
+.navbar-item img {
+    width: 48px;
+    height: 48px;
+}
