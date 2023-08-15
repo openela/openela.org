@@ -6,7 +6,7 @@ sidebar: false
 
 Absolutely everyone is welcome to join!
 
-From Enterprise Linux downstream derivatives, to organizations that depend on Enterprise Linux, to vendors, and indivduals who just love being part of something amazing, YOU ARE INVITED!
+From Enterprise Linux downstream derivatives, to organizations that depend on Enterprise Linux, to vendors, and individuals who just love being part of something amazing, YOU ARE INVITED!
 
 ## How to Join:
 
