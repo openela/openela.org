@@ -15,3 +15,5 @@ We are still in the early makings of the project, so the first step in becoming 
 <div style="text-align: center; margin-top: 100px;">
     <a class="button cta is-large rounded secondary-btn raised" style="text-align:center" href="https://join.slack.com/t/openela/shared_invite/zt-216xfnouv-AXPgcLwQeCPzZvuLolczdg"> Join the OpenELA Team on Slack </a>
 </div>
+
+_note: Slack invite links sometimes need to be regenerated, if that happens, please let us know at info@openela.org._
