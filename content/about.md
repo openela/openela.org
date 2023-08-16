@@ -34,7 +34,7 @@ OpenELA is a collaboration created and upheld by CIQ, Oracle, and SUSE. Open Sou
 
 ## Deliverables:
 
-* All sources necessary to achieve a 1:1 / bug-for-bug compatible version of EL which will be distributed via Git encouraging community collaboration
+* All sources necessary to achieve a 1:1 / bug-for-bug compatible version of EL which will be distributed via Git, encouraging community collaboration
 * Security errata data
 * Compatibility guidelines for downstream distributions to test their build results
 * A branding kit for all downstream distributions and supporters
