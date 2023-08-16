@@ -38,7 +38,7 @@ OpenELA is a collaboration created and upheld by CIQ, Oracle, and SUSE. Open Sou
 * Security errata data
 * Compatibility guidelines for downstream distributions to test their build results
 * A branding kit for all downstream distributions and supporters
-* User and Administration Documentation (Oracle contribution)
+* User and Administration Documentation
 
 ## Governance
 
