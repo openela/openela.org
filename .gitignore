@@ -9,3 +9,5 @@ tmp
 hugo.exe
 hugo.linux
 hugo.darwin
+.idea/workspace.xml
+.hugo_build.lock
