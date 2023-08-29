@@ -46,6 +46,8 @@ params:
     url: /about
   - title: Join
     url: /join
+  - title: FAQ
+    url: /faq
   - title: News
     url: /announcements
   section3:
