@@ -62,10 +62,13 @@ params:
     socialmedia:
     - link: https://github.com/openela
       icon: github
+      target: _blank
     - link: https://twitter.com/@openelaorg
       icon: twitter
+      target: _blank
     - link: https://www.linkedin.com/company/openela
       icon: linkedin
+      target: _blank
     quicklinks:
       column1:
         title: ""
