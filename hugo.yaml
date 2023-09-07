@@ -48,7 +48,7 @@ params:
     url: /join
   - title: FAQ
     url: /faq
-  - title: News
+  - title: Announcements
     url: /announcements
   section3:
     title: The Community Repository for Enterprise Linux Sources

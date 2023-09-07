@@ -10,11 +10,11 @@ From Enterprise Linux downstream derivatives, to organizations that depend on En
 
 ## How to Join:
 
-We are still in the early makings of the project, so the first step in becoming part of what we are doing is to reach out to us! You can email us at info@openela.org or just jump into our Slack channel here:
+We are still in the early makings of the project, so the first step in becoming part of what we are doing is to join us and say hello!
 
 <div style="text-align: center; margin-top: 100px; margin-bottom: 50px;">
     <a class="button cta is-large rounded secondary-btn raised" style="text-align:center" href="https://join.slack.com/t/openela/shared_invite/zt-216xfnouv-AXPgcLwQeCPzZvuLolczdg"> Join the OpenELA Team on Slack </a>
 </div>
 
 <div style="text-align: center;">
-<em>note: Slack invite links sometimes need to be regenerated, if that happens, please let us know at info@openela.org.</em></<div>
+<em>note: Slack invite links sometimes need to be regenerated, if that happens, please let us know at [info@openela.org](mailto:info@openela.org).</em></<div>
