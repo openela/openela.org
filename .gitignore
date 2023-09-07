@@ -5,9 +5,9 @@
 node_modules
 dist
 tmp
+.hugo_build.lock
 
 hugo.exe
 hugo.linux
 hugo.darwin
-.idea/workspace.xml
-.hugo_build.lock
+
