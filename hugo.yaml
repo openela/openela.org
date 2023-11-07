@@ -53,7 +53,7 @@ params:
   section3:
     title: The Community Repository for Enterprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
-    image: illustrations/git-forge.png
+    image: openela-imports.png
     buttonText: Learn More
     buttonLink: "/about"
   footer:
