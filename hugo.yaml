@@ -1,4 +1,5 @@
-baseURL: http://OpenELA.org/
+---
+baseURL: https://OpenELA.org/
 languageCode: en-us
 title: OpenELA
 
@@ -6,9 +7,17 @@ module:
   imports:
     path: github.com/StefMa/hugo-fresh
 
+outputs:
+  home:
+    - html
+  section:
+    - html
+    - rss
+  term:
+    - html
+
 disableKinds:
-- taxonomy
-- taxonomyTerm
+  - taxonomy
 
 markup:
   goldmark:
@@ -26,34 +35,36 @@ params:
     # height: 28
   font:
     name: "Open Sans"
-    sizes: [400,600]
+    sizes: [400, 600]
   hero:
     title: Open Enterprise Linux Association
-    subtitle: OpenELA is a trade association of open source Enterprise Linux distribution developers
+    subtitle: |
+      OpenELA is a trade association of open source Enterprise Linux 
+      distribution developers
     buttontext: Read The Announcement
     buttonlink: /news/hello_world
     # Hero image (from static/images/___)
     image: illustrations/hydrangea-hero.svg
     clientlogos:
-    - logo: ciq
-      url: https://ciq.com
-    - logo: oracle
-      url: https://www.oracle.com
-    - logo: suse
-      url: https://www.suse.com
+      - logo: ciq
+        url: https://ciq.com
+      - logo: oracle
+        url: https://www.oracle.com
+      - logo: suse
+        url: https://www.suse.com
   navbar:
-  - title: About
-    url: /about
-  - title: Join
-    url: /join
-  - title: Git/Main
-    url: https://github.com/orgs/openela-main/repositories
-  - title: FAQ
-    url: /faq
-  - title: Governance
-    url: https://github.com/openela/governance
-  - title: Announcements
-    url: /announcements
+    - title: About
+      url: /about
+    - title: Join
+      url: /join
+    - title: Git/Main
+      url: https://github.com/orgs/openela-main/repositories
+    - title: FAQ
+      url: /faq
+    - title: Governance
+      url: https://github.com/openela/governance
+    - title: Announcements
+      url: /announcements
   section3:
     title: The Community Repository for Enterprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
@@ -64,15 +75,15 @@ params:
     logo: openELA.svg
     socialmediatitle: Follow Us
     socialmedia:
-    - link: https://github.com/openela
-      icon: github
-      target: _blank
-    - link: https://twitter.com/@openelaorg
-      icon: twitter
-      target: _blank
-    - link: https://www.linkedin.com/company/openela
-      icon: linkedin
-      target: _blank
+      - link: https://github.com/openela
+        icon: github
+        target: _blank
+      - link: https://twitter.com/@openelaorg
+        icon: twitter
+        target: _blank
+      - link: https://www.linkedin.com/company/openela
+        icon: linkedin
+        target: _blank
     quicklinks:
       column1:
         title: ""
@@ -80,4 +91,3 @@ params:
         title: ""
       column3:
         title: ""
-

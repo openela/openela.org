@@ -1,6 +1,7 @@
 ---
 title: CIQ, Oracle and SUSE Create Open Enterprise Linux Association for a Collaborative and Open Future
-
+slug: hello_world
+date: 2023-08-10
 ---
 
 * New trade association brings together open source Enterprise Linux community 
