@@ -46,14 +46,18 @@ params:
     url: /about
   - title: Join
     url: /join
+  - title: Git/Main
+    url: https://github.com/orgs/openela-main/repositories
   - title: FAQ
     url: /faq
+  - title: Governance
+    url: https://github.com/openela/governance
   - title: Announcements
     url: /announcements
   section3:
     title: The Community Repository for Enterprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
-    image: illustrations/git-forge.png
+    image: openela-imports.png
     buttonText: Learn More
     buttonLink: "/about"
   footer:
