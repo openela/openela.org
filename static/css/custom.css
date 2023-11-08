@@ -33,3 +33,31 @@
     width: 48px;
     height: 48px;
 }
+
+.postType {
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #007bff; 
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 250px;
+  padding: 3px;
+  margin: 2px;
+  display: inline-block;
+}
+
+section .container article header {
+  padding: 1em 0;
+}
+
+section .container article header h6 {
+  padding: 0.25em 0;
+}
+
+section.section .container article section {
+  padding: 1em 0;
+}
+.content article footer {
+  padding: 1em 0;
+}
+
