@@ -17,4 +17,4 @@ We are still in the early makings of the project, so the first step in becoming 
 </div>
 
 <div style="text-align: center;">
-<em>note: Slack invite links sometimes need to be regenerated.  If that happens, please let us know at [info@openela.org](mailto:info@openela.org).</em></<div>
+<em>note: Slack invite links sometimes need to be regenerated. If that happens, please let us know at <a href="mailto:info@openela.org">info@openela.org</a>.</em></<div>
