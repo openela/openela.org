@@ -15,5 +15,8 @@
 {{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
-<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/fontawesome/css/fontawesome.min.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/fontawesome/css/brands.min.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/fontawesome/css/solid.min.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/fontawesome/css/v4-font-face.min.css" | relURL }}">
 <link rel="stylesheet" type="text/css" href="{{ "css/custom.css" | relURL }}">
