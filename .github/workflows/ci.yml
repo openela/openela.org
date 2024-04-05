@@ -8,7 +8,9 @@ on:
       - reopened
       - synchronize
       - closed
-
+    paths-ignore:
+      - '.github/workflows/**'
+  
 concurrency: preview-${{ github.ref }}
 
 permissions:
