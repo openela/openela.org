@@ -36,7 +36,7 @@ jobs:
         with:
           version: 0.115.4
           image: ext-alpine
-          command: --minify --baseURL https://openela.github.io/openela.org/pr-preview/pr-${{ github.event.number }}
+          command: --minify --baseURL https://openela.github.io/openela-preview/pr-preview/pr-${{ github.event.number }}
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
