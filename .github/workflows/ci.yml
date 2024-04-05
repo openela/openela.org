@@ -42,5 +42,5 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./public/
-          deploy-repository: openela-preview
+          deploy-repository: openela/openela-preview
           token: ${{ secrets.PREVIEW_TOKEN }}
