@@ -49,4 +49,4 @@ jobs:
           preview_repo: openela/openela.org-preview
           preview_token: ${{ secrets.PREVIEW_TOKEN }}
           pr_comment: true
-          deployments: true
+          deployments: false
