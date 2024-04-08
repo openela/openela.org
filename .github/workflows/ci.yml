@@ -50,3 +50,7 @@ jobs:
           preview_token: ${{ secrets.PREVIEW_TOKEN }}
           pr_comment: true
           deployments: false
+          git_author_name: OpenELA Preview
+          git_author_email: noreply@openela.org
+          git_commiter_name: OpenELA Preview
+          git_commiter_email: noreply@openela.org 
