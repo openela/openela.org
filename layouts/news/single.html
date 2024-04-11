@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+
+<section class="section is-medium">
+  <div class="container">
+    <article>
+      <header>
+        <div class="columns">
+          <div class="column is-centered-tablet-portrait">
+            <h1 class="title section-title">{{ .Title }}</h1>
+            <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+            <h6><strong>Published on:</strong> {{ .Date.Format "January 2, 2006" }}</h6>
+            <h6><strong>Author:</strong> {{ default "The OpenELA Team" .Params.author }}</h6>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class=content>
+          {{ .Content }}
+        </div>
+      </section>
+
+      <footer>
+        {{ if .Params.tags }}
+          <p>Tags:
+          {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+          </p>
+        {{ end }}
+      </footer>
+    </article>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+{{ partial "single/sidebar.html" . }}
+
+{{ end }}

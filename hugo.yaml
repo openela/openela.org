@@ -1,14 +1,26 @@
-baseURL: http://OpenELA.org/
+---
+baseURL: https://openela.org/
 languageCode: en-us
-title: OpenELA
+title: Open Enterprise Linux Association
 
 module:
   imports:
     path: github.com/StefMa/hugo-fresh
 
-disableKinds:
-- taxonomy
-- taxonomyTerm
+outputs:
+  home:
+    - html
+  section:
+    - html
+    - rss
+  term:
+    - html
+
+permalinks:
+  page:
+    news: /news/:year/:month/:slug/
+  section:
+    news: /news/
 
 markup:
   goldmark:
@@ -26,34 +38,36 @@ params:
     # height: 28
   font:
     name: "Open Sans"
-    sizes: [400,600]
+    sizes: [400, 600]
   hero:
     title: Open Enterprise Linux Association
-    subtitle: OpenELA is a trade association of open source Enterprise Linux distribution developers
+    subtitle: |
+      OpenELA is a trade association of open source Enterprise Linux 
+      distribution developers
     buttontext: Read The Announcement
     buttonlink: /news/hello_world
     # Hero image (from static/images/___)
     image: illustrations/hydrangea-hero.svg
     clientlogos:
-    - logo: ciq
-      url: https://ciq.com
-    - logo: oracle
-      url: https://www.oracle.com
-    - logo: suse
-      url: https://www.suse.com
+      - logo: ciq
+        url: https://ciq.com
+      - logo: oracle
+        url: https://www.oracle.com
+      - logo: suse
+        url: https://www.suse.com
   navbar:
-  - title: About
-    url: /about
-  - title: Join
-    url: /join
-  - title: Git/Main
-    url: https://github.com/orgs/openela-main/repositories
-  - title: FAQ
-    url: /faq
-  - title: Governance
-    url: https://github.com/openela/governance
-  - title: Announcements
-    url: /announcements
+    - title: About
+      url: /about
+    - title: Join
+      url: /join
+    - title: Git/Main
+      url: https://github.com/orgs/openela-main/repositories
+    - title: FAQ
+      url: /faq
+    - title: Governance
+      url: https://github.com/openela/governance
+    - title: News
+      url: /news
   section3:
     title: The Community Repository for Enterprise Linux Sources
     subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
@@ -83,4 +97,3 @@ params:
         title: ""
       column3:
         title: ""
-

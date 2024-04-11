@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">{{ .Title }}</h1>
+        <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      {{ .Content }}
+      <ul>
+        <!-- Ranges through content/news/*.md -->
+        {{ $pages := where .Site.RegularPages "Type" "in" (slice "blog" "news" "announcement") }}
+        {{ range $pages.ByDate.Reverse }}
+          <li>
+          <a href="{{ .Permalink }}">{{if .Type }}<span class=postType>{{.Type}}</span>{{ end }}{{ .Title }}</a> (<em>{{ .Date.Format "January" }} {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th{{ end }}, {{ .Date.Format "2006" }}</em>) 
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{ if .Params.include_footer }}
+{{ partial "footer.html" . }}
+{{ end }}
+
+{{ if .Params.sidebar }}
+{{ partial "single/sidebar.html" . }}
+{{ end }}
+
+{{ end }}
