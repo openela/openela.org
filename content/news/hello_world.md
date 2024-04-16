@@ -3,7 +3,7 @@ title: CIQ, Oracle and SUSE Create Open Enterprise Linux Association for a Colla
 slug: hello_world
 date: 2023-08-10
 aliases:
-    - /announcements/hello_world
+    - /news/hello_world
 ---
 
 * New trade association brings together open source Enterprise Linux community 
