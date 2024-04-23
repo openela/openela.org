@@ -1,5 +1,6 @@
 .hero-foot ul {
-    display: flex;  
+    display: flex;
+ 
     flex-wrap: wrap;
 }
 
@@ -35,8 +36,10 @@
 }
 
 .postType {
-  border-radius: 5px; /* Rounded corners */
-  border: 2px solid #007bff; 
+  border-radius: 5px;
+/* Rounded corners */
+  border: 2px solid #007bff;
+
   color: #0056b3;
   font-size: 14px;
   font-weight: bold;
@@ -61,3 +64,6 @@ section.section .container article section {
   padding: 1em 0;
 }
 
+.content div > iframe {
+  padding-bottom: 1em;
+}
