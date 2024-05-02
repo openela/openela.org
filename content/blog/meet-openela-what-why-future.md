@@ -21,5 +21,5 @@ This collaboration creating a common source for the base of multiple Enterprise 
 
 Please check out the next blog in the series, featuring Wim Coekaerts of Oracle sharing more about why Oracle, CIQ, and SUSE came together to start OpenELA.
 
-(You can watch the full interview with Greg [here](https://www.youtube.com/watch?v=YNTR7qrmp1A).)
+(You can watch the full interview with Greg [here](https://tfir.io/what-is-openela-gregory-kurtzer/).)
 
