@@ -1,6 +1,6 @@
 ---
-title: What Is OpenELA?
-slug: what-is-openela
+title: Why the OpenELA was created
+slug: why-was-openela-created
 date: 2024-05-01T17:18:19-04:00
 author: Wim Coekaerts
 ---
