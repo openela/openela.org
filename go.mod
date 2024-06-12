@@ -1,4 +1,4 @@
-module openelf
+module org.openela
 
 go 1.20
 
