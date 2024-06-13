@@ -1,7 +1,7 @@
 ---
 baseURL: https://openela.org/
 languageCode: en-us
-title: Open Enterprise Linux Association
+title: OpenEL Association
 
 module:
   imports:
@@ -29,7 +29,7 @@ markup:
 
 params:
   openGraph: true
-  description: Open Enterprise Linux Association
+  description: OpenELA
   navbarlogo:
     image: logos/openELA.svg
     link: /
@@ -40,7 +40,7 @@ params:
     name: "Open Sans"
     sizes: [400, 600]
   hero:
-    title: Open Enterprise Linux Association
+    title: OpenELA
     subtitle: |
       OpenELA is a trade association of open source Enterprise Linux
       distribution developers

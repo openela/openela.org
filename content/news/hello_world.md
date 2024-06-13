@@ -1,5 +1,5 @@
 ---
-title: CIQ, Oracle and SUSE Create Open Enterprise Linux Association for a Collaborative and Open Future
+title: CIQ, Oracle and SUSE Create OpenEL Association for a Collaborative and Open Future
 slug: hello_world
 date: 2023-08-10
 aliases:
@@ -9,7 +9,7 @@ aliases:
 * New trade association brings together open source Enterprise Linux community 
 * It will provide an open process to access source code that organizations can use to build distributions compatible with RHEL
 
-__RENO, Nev., AUSTIN, Texas, and LUXEMBOURG—August 10, 2023__—CIQ, Oracle and SUSE today announced their intent to form the Open Enterprise Linux Association (OpenELA), a collaborative trade association to encourage the development of distributions compatible with Red Hat Enterprise Linux (RHEL) by providing open and free Enterprise Linux (EL) source code.
+__RENO, Nev., AUSTIN, Texas, and LUXEMBOURG—August 10, 2023__—CIQ, Oracle and SUSE today announced their intent to form the OpenEL Association (OpenELA), a collaborative trade association to encourage the development of distributions compatible with Red Hat Enterprise Linux (RHEL) by providing open and free Enterprise Linux (EL) source code.
 
 The formation of OpenELA arises from Red Hat’s recent changes to RHEL source code availability. In response, CIQ, Oracle and SUSE are collaborating to deliver source code, tools and systems through OpenELA for the community.
 
