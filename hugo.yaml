@@ -81,8 +81,8 @@ params:
     - link: https://github.com/openela
       icon: brands fa-github
       target: _blank
-    - link: https://twitter.com/@openelaorg
-      icon: brands fa-twitter
+    - link: https://x.com/@openelaorg
+      icon: brands fa-x-twitter
       target: _blank
     - link: https://fosstodon.org/@openela
       icon: brands fa-mastodon
