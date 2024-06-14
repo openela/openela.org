@@ -1,7 +1,7 @@
 ---
 baseURL: https://openela.org/
 languageCode: en-us
-title: Open Enterprise Linux Association
+title: OpenEL Association
 
 module:
   imports:
@@ -29,7 +29,7 @@ markup:
 
 params:
   openGraph: true
-  description: Open Enterprise Linux Association
+  description: OpenELA
   navbarlogo:
     image: logos/openELA.svg
     link: /
@@ -40,14 +40,18 @@ params:
     name: "Open Sans"
     sizes: [400, 600]
   hero:
-    title: Open Enterprise Linux Association
+    title: OpenELA
     subtitle: |
-      OpenELA is a trade association of open source Enterprise Linux 
+      OpenELA is a trade association of open source Enterprise Linux
       distribution developers
-    buttontext: Read The Announcement
-    buttonlink: /news/hello_world
+
+      Our mission is to provide a secure, transparent, and reliable
+      Enterprise Linux source that is globally available to all as a
+      buildable base.
+    buttontext: Check out our news
+    buttonlink: /news
     # Hero image (from static/images/___)
-    image: illustrations/hydrangea-hero.svg
+    image: logos/openELA.svg
     clientlogos:
       - logo: ciq
         url: https://ciq.com
@@ -68,12 +72,47 @@ params:
       url: https://github.com/openela/governance
     - title: News
       url: /news
+  section1:
+    title: Main OpenELA projects
+    subtitle: |
+      Open for your contributions
+    tiles:
+    - title: Enterprise Linux
+      icon: globe
+      text: |
+          Sources for the OpenELA Enterprise Linux distribution.
+      url: https://github.com/orgs/openela-main/repositories
+
+      buttonText: View Repositories
+    - title: User Manuals
+      text: |
+          End User Documentation sources
+      url: https://github.com/openela/openela-documentation
+      icon: book-solid
+      buttonText: View Documentation
+    - title: Linux 4.14 Long Term Support
+      icon: linux
+      text: |
+           4.14 Linux maintenance after community support end.
+      url: https://github.com/openela/kernel-lts/tree/linux-4.14.y
+      buttonText: View Linux 4.14.y LTS
+  section2:
+    title: OpenELA Projects
+    subtitle: |
+      A selection of projects from the OpenELA community
+    features:
+    - title: Mothership
+      text: |
+        The Mothership project is a collection of tools and services
+        to archive RPM package source and attest to their authenticity.
+      icon: mship_gopher_dark
   section3:
-    title: The Community Repository for Enterprise Linux Sources
-    subtitle: No subscriptions. No passwords. No barriers. Freeloaders welcome.
-    image: openela-imports.png
-    buttonText: Learn More
-    buttonLink: "/about"
+    title: OpenELA
+    image: illustrations/github.svg
+    subtitle: |
+      Learn more about OpenELA and how you can contribute to the project.
+    buttonText: GitHub
+    buttonLink: https://github.com/openela/
   footer:
     logo: openELA.svg
     socialmediatitle: Follow Us
