@@ -18,10 +18,20 @@
       {{ .Content }}
       <ul>
         <!-- Ranges through content/news/*.md -->
-        {{ $pages := where .Site.RegularPages "Type" "in" (slice "blog" "news" "announcement") }}
+        {{ $pages := where .Site.RegularPages "Type" "in" (slice "blog" "news" "announcement" "article") }}
         {{ range $pages.ByDate.Reverse }}
           <li>
-          <a href="{{ .Permalink }}">{{if .Type }}<span class=postType>{{.Type}}</span>{{ end }}{{ .Title }}</a> (<em>{{ .Date.Format "January" }} {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th{{ end }}, {{ .Date.Format "2006" }}</em>) 
+            {{- if eq .Type "article" -}}
+            <a href="{{ .Params.link }}" target="_blank">
+            {{- else -}}
+            <a href="{{ .Permalink }}">
+            {{- end -}}
+              {{- if .Type -}}
+                <span class=postType>{{.Type}}</span>
+              {{- end -}}
+              {{ .Title }}
+            </a>
+            (<em>{{ .Date.Format "January" }} {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th{{ end }}, {{ .Date.Format "2006" }}</em>) 
           </li>
         {{ end }}
       </ul>
