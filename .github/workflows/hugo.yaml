@@ -1,6 +1,9 @@
 name: Deploy Hugo site to Pages
 
 on:
+  # Runs for pull requests
+  pull_request:
+
   # Runs on pushes targeting the default branch
   push:
     branches:
