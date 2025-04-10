@@ -101,6 +101,14 @@ params:
     subtitle: |
       A selection of projects from the OpenELA community
     features:
+    - title: Leapp
+      text: |
+        Leapp is an existing open source project that aims to serve as an
+        expert advisor for moving operating systems (OS) workloads to newer
+        Enterprise Linux OS versions by generating suggested actions,
+        identifying risks, producing checklists, and automating steps for
+        users.
+      icon: snactor
     - title: Mothership
       text: |
         The Mothership project is a collection of tools and services
