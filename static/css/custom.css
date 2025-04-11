@@ -67,3 +67,7 @@ section.section .container article section {
 .content div > iframe {
   padding-bottom: 1em;
 }
+
+.media-left {
+  max-width: 200px;
+}
