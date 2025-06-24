@@ -39,6 +39,7 @@ params:
   font:
     name: "Open Sans"
     sizes: [400, 600]
+  banner: true
   hero:
     title: OpenELA
     subtitle: |
@@ -114,6 +115,12 @@ params:
         The Mothership project is a collection of tools and services
         to archive RPM package source and attest to their authenticity.
       icon: mship_gopher_dark
+    - title: ELValidated
+      text: |
+        ELValidated is a verification and interoperability suite for Enterprise
+        Linux operating systems that gives organizations and developers the
+        ability to verify the compatibility of their Enterprise Linux distributions.
+      icon: elvalidated
   section3:
     title: OpenELA
     image: illustrations/github.svg

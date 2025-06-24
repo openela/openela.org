@@ -71,3 +71,27 @@ section.section .container article section {
 .media-left {
   max-width: 200px;
 }
+
+/* Banner styles */
+.notification.is-info.is-light {
+  background-color: #f0f8ff;
+  border: 1px solid #b3d9ff;
+  color: #0056b3;
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.notification.is-info.is-light a {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.notification.is-info.is-light a:hover {
+  color: #003d82;
+  text-decoration: underline !important;
+}
+
+.notification.is-info.is-light strong {
+  color: #003d82;
+}

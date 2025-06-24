@@ -1,0 +1,47 @@
+{{- $section2 := .Site.Params.section2 }}
+{{- $title    := index $section2 "title" }}
+{{- $subtitle := index $section2 "subtitle" }}
+{{- $features := index $section2 "features" }}
+<section class="section is-medium" id="section2">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">{{ $title }}</h1>
+        <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-60">
+        {{- range $features }}
+        {{ $iconName := .icon }}
+        {{ $extensions := slice "svg" "png" "jpg" "jpeg" "webp" }}
+        {{ $iconPath := "" }}
+
+        {{ range $extensions }}
+          {{ $tryPath := printf "images/illustrations/icons/%s.%s" $iconName . }}
+          {{ if fileExists (printf "static/%s" $tryPath) }}
+            {{ $iconPath = relURL $tryPath }}
+          {{ end }}
+        {{ end }}
+        <article class="media icon-box" style="align-items: center;">
+          <figure class="media-left">
+            <p class="image">
+              {{ if $iconPath }}
+              <img src="{{ $iconPath }}" alt="{{ $iconName }}">
+              {{ end }}
+            </p>
+          </figure>
+          <div class="media-content mt-50">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">{{ .title }}</span>
+
+                <span class="icon-box-text">{{ .text | markdownify }}</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
