@@ -3,6 +3,7 @@ title: Binary Compatibility
 slug: binary-compatibility
 date: 2025-08-13T09:48:02-07:00
 author: Greg Marsden
+canonicalUrl: https://blogs.oracle.com/linux/post/binary-compatibility
 ---
 
 [Recently, the OpenELA project announced the ELValidated project](https://urldefense.com/v3/__https:/openela.org/blog/elvalidated-compatibility-toolset/__;!!ACWV5N9M2RV99hQ!Jbrk5w-c4h4QRuY7OwsJ5l6Q_vtB3pPh9kLm_mUQ_vMVBhL2Zs1l70KdDVwVHfSo18EdzaWUElPrwcrjyjM$), which introduces a cross-vendor compatibility test suite for Enterprise Linux operating systems. Oracle is proud to participate in that project. In this post, we'll discuss why binary compatibility is important, how we are using ELValidated in our build infrastructure, and what this means for our customers.
