@@ -25,7 +25,7 @@ By enabling organizations and developers that provide Enterprise Linux distribut
 *   Reduced business cost   
 *   More secure environments
 
-Learn more about ELValidated [here](https://urldefense.com/v3/__https:/github.com/openela/Compatibility__;!!ACWV5N9M2RV99hQ!J7M4OcM4qlcj52NDOLWsl_i8e1qopl0TwADA5C-hmvmaJ-3OcyquAgXgb_1gxlKxStZmqNPmMjYq2WIID4I$). 
+Learn more about ELValidated [here](https:/github.com/openela/Compatibility). 
 
 ## Supporting Quotes
 
