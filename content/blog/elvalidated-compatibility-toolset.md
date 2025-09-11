@@ -16,16 +16,16 @@ ELValidated is an open source toolkit which uses industry standardized technolog
 
 ISVs, IHVs, and Linux developers benefit from ELValidated by gaining validation and assurance that their applications can run across all Linux distributions without any modifications or recompilations. ELValidated can be used by organizations to validate changes to existing releases and compatibility between releases, helping verify that features added to a given operating system haven’t broken compatibility with earlier versions. With ELValidated, organizations and developers can increase their scope of support without increasing the testing costs and resources necessary for each Linux distribution.
 
-By enabling organizations and developers that provide Enterprise Linux distributions to  demonstrate compatibility with the Enterprise Linux standard, end-users gain the following benefits: 
+By enabling organizations and developers that provide Enterprise Linux distributions to  demonstrate compatibility with the Enterprise Linux standard, end-users gain the following benefits:
 
-*   Demonstrated binary compatibility with Enterprise Linux, including all OpenELA Principal Member distributions   
-*   More choice and interoperability    
-*   Aligned Linux skills and system management   
-*   Reduced overhead  
-*   Reduced business cost   
+*   Demonstrated binary compatibility with Enterprise Linux, including all OpenELA Principal Member distributions
+*   More choice and interoperability
+*   Aligned Linux skills and system management
+*   Reduced overhead
+*   Reduced business cost
 *   More secure environments
 
-Learn more about ELValidated [here](https:/github.com/openela/Compatibility). 
+Learn more about ELValidated on [GitHub](https://github.com/openela/Compatibility).
 
 ## Supporting Quotes
 
