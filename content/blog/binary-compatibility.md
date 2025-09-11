@@ -6,7 +6,7 @@ author: Greg Marsden
 canonicalUrl: https://blogs.oracle.com/linux/post/binary-compatibility
 ---
 
-[Recently, the OpenELA project announced the ELValidated project](https://urldefense.com/v3/__https:/openela.org/blog/elvalidated-compatibility-toolset/__;!!ACWV5N9M2RV99hQ!Jbrk5w-c4h4QRuY7OwsJ5l6Q_vtB3pPh9kLm_mUQ_vMVBhL2Zs1l70KdDVwVHfSo18EdzaWUElPrwcrjyjM$), which introduces a cross-vendor compatibility test suite for Enterprise Linux operating systems. Oracle is proud to participate in that project. In this post, we'll discuss why binary compatibility is important, how we are using ELValidated in our build infrastructure, and what this means for our customers.
+[Recently, the OpenELA project announced the ELValidated project](https:/openela.org/blog/elvalidated-compatibility-toolset/), which introduces a cross-vendor compatibility test suite for Enterprise Linux operating systems. Oracle is proud to participate in that project. In this post, we'll discuss why binary compatibility is important, how we are using ELValidated in our build infrastructure, and what this means for our customers.
 
 ## Why is Binary Compatibility important?
 
@@ -34,6 +34,6 @@ Oracle has integrated libabigail and the ELValidated suite into our build and re
 
 Oracle Linux is 100% application binary compatible with the ELValidated ecosystem. Use Oracle Linux or an OS from the other OpenELA members and rest assured that your applications will interoperate across the OS vendor platforms.
 
-Though the [test suite](https://urldefense.com/v3/__https:/github.com/openela/ELValidated-abi__;!!ACWV5N9M2RV99hQ!Jbrk5w-c4h4QRuY7OwsJ5l6Q_vtB3pPh9kLm_mUQ_vMVBhL2Zs1l70KdDVwVHfSo18EdzaWUElPri5JH1Bk$) and [compatibility APIs](https://urldefense.com/v3/__https:/github.com/openela/Compatibility__;!!ACWV5N9M2RV99hQ!Jbrk5w-c4h4QRuY7OwsJ5l6Q_vtB3pPh9kLm_mUQ_vMVBhL2Zs1l70KdDVwVHfSo18EdzaWUElPrN0nLXNU$) are open source and available for your inspection, it's your OS vendor who is responsible for testing, validating and advertising that their offering is [ELValidated](https://urldefense.com/v3/__https:/openela.org/blog/elvalidated-compatibility-toolset/__;!!ACWV5N9M2RV99hQ!Jbrk5w-c4h4QRuY7OwsJ5l6Q_vtB3pPh9kLm_mUQ_vMVBhL2Zs1l70KdDVwVHfSo18EdzaWUElPrwcrjyjM$).
+Though the [test suite](https:/github.com/openela/ELValidated-abi) and [compatibility APIs](https:/github.com/openela/Compatibility) are open source and available for your inspection, it's your OS vendor who is responsible for testing, validating and advertising that their offering is [ELValidated](https:/openela.org/blog/elvalidated-compatibility-toolset/).
 
 ELValidated provides benefits to end users, and software and hardware vendors in the Enterprise Linux market. Customers who select an ELValidated OS can confidently run software designed for the Enterprise Linux ecosystem, while application vendors can trust that software tested on one ELValidated platform will function seamlessly on another.
