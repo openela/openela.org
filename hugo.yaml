@@ -119,7 +119,7 @@ params:
       text: |
         ELValidated is a verification and interoperability suite for Enterprise
         Linux operating systems that gives organizations and developers the
-        ability to verify the compatibility of their Enterprise Linux distributions.
+        ability to verify the compatibility of their Enterprise Linux distributions. [Learn more about ELValidated](/elvalidated).
       icon: elvalidated
   section3:
     title: OpenELA
