@@ -135,16 +135,16 @@ params:
     socialmediatitle: Follow Us
     socialmedia:
     - link: https://github.com/openela
-      icon: brands fa-github
+      icon: fa-brands fa-github
       target: _blank
     - link: https://x.com/@openelaorg
-      icon: brands fa-x-twitter
+      icon: fa-brands fa-x-twitter
       target: _blank
     - link: https://fosstodon.org/@openela
-      icon: brands fa-mastodon
+      icon: fa-brands fa-mastodon
       target: _blank
     - link: https://www.linkedin.com/company/openela
-      icon: brands fa-linkedin
+      icon: fa-brands fa-linkedin
       target: _blank
     quicklinks:
       column1:
