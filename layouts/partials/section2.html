@@ -26,14 +26,26 @@
           <figure class="media-left">
             <p class="image">
               {{ if $iconPath }}
-              <img src="{{ $iconPath }}" alt="{{ $iconName }}">
+                {{ if .url }}
+                <a href="{{ .url }}">
+                  <img src="{{ $iconPath }}" alt="{{ $iconName }}">
+                </a>
+                {{ else }}
+                <img src="{{ $iconPath }}" alt="{{ $iconName }}">
+                {{ end }}
               {{ end }}
             </p>
           </figure>
           <div class="media-content mt-50">
             <div class="content">
               <p>
+                {{ if .url }}
+                <a href="{{ .url }}">
+                  <span class="icon-box-title">{{ .title }}</span>
+                </a>
+                {{ else }}
                 <span class="icon-box-title">{{ .title }}</span>
+                {{ end }}
 
                 <span class="icon-box-text">{{ .text | markdownify }}</span>
               </p>
