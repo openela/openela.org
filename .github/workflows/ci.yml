@@ -17,7 +17,7 @@ jobs:
   deploy-preview:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.127.0
+      HUGO_VERSION: 0.161.1
       PREVIEW_BASE_URL: https://openela.github.io/openela.org-preview/
     steps:
       - name: Checkout
@@ -30,7 +30,7 @@ jobs:
         uses: floryn90/actions-hugo@1.0.1
         if: github.event.action != 'closed'
         with:
-          version: 0.127.0
+          version: 0.161.1
           image: ext-alpine
           command: --minify --baseURL ${PREVIEW_BASE_URL}/preview_${{ github.sha }}
 
