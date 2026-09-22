@@ -1,7 +1,6 @@
 ---
 title: "ELValidated: The Definitive Test Suite for Enterprise Linux Compatibility"
-include_footer: true
-sidebar: false
+type: "elvalidated"
 ---
 
 Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.  
