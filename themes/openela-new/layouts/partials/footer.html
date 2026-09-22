@@ -1,0 +1,47 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="{{ .Site.BaseURL }}" class="footer-logo-link">
+                    <img src="{{ "images/logos/openELA.svg" | relURL }}" alt="OpenELA Logo" class="footer-logo-img" style="height: 32px; width: auto;">
+                </a>
+                <p class="footer-desc">Open Enterprise Linux Association. Providing a secure, transparent, and reliable Enterprise Linux source for the global community.</p>
+                <div class="social-links">
+                    {{ range .Site.Params.footer.socialmedia }}
+                    <a href="{{ .link }}" target="{{ .target }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a>
+                    {{ end }}
+                </div>
+            </div>
+            <div>
+                <h4>Organization</h4>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/join">Join</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="https://github.com/openela/governance" target="_blank">Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://github.com/openela-main" target="_blank">Source Repos</a></li>
+                    <li><a href="/elvalidated">ELValidated</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/docs">Documentation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://github.com/openela" target="_blank">GitHub</a></li>
+                    <li><a href="https://fosstodon.org/@openela" target="_blank">Mastodon</a></li>
+                    <li><a href="https://x.com/@openelaorg" target="_blank">X / Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/openela" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Format "2006" }} Open Enterprise Linux Association. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

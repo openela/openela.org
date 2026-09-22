@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="post-v3">
+    <!-- Post Hero -->
+    <header class="post-hero">
+        <div class="container">
+            <div class="post-meta">
+                <span class="post-category">News & Announcements</span>
+                <span class="post-sep">•</span>
+                <time class="post-date">{{ .Date.Format "January 2, 2006" }}</time>
+            </div>
+            <h1 class="post-title">{{ .Title }}</h1>
+            {{ with .Description }}
+            <p class="post-excerpt">{{ . }}</p>
+            {{ end }}
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-container">
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+
+        <footer class="post-footer">
+            <div class="post-share">
+                <span>Share this story</span>
+                <div class="share-links">
+                    <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" target="_blank" aria-label="Share on X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Related / Navigation -->
+    <section class="post-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                {{ if .PrevInSection }}
+                <a href="{{ .PrevInSection.RelPermalink }}" class="nav-card prev">
+                    <span class="nav-label">← Previous Story</span>
+                    <h4>{{ .PrevInSection.Title }}</h4>
+                </a>
+                {{ end }}
+                {{ if .NextInSection }}
+                <a href="{{ .NextInSection.RelPermalink }}" class="nav-card next">
+                    <span class="nav-label">Next Story →</span>
+                    <h4>{{ .NextInSection.Title }}</h4>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+</article>
+{{ end }}

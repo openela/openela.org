@@ -1,0 +1,32 @@
+<header class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ .Site.BaseURL }}" style="text-decoration: none; display: flex; align-items: center;">
+                <img src="{{ "images/logos/openELA.svg" | relURL }}" alt="OpenELA Logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar-menu" id="nav-links">
+            {{ range .Site.Params.navbar }}
+            <a href="{{ .url }}" class="navbar-item">{{ .title }}</a>
+            {{ end }}
+            <a href="/join" class="button is-primary">Join</a>
+        </nav>
+    </div>
+</header>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav-links');
+        if (burger && nav) {
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        }
+    });
+</script>

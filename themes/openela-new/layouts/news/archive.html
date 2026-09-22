@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="archive-page section">
+    <div class="container">
+        <div class="archive-header">
+            <a href="/news" class="back-link">← Back to Newsroom</a>
+            <h1 class="section-title">All News & Updates</h1>
+            <p class="subtitle">Complete chronological archive of OpenELA announcements, releases, and community highlights.</p>
+        </div>
+        
+        <div class="archive-grid mt-4">
+            {{ $news := where .Site.RegularPages "Section" "news" }}
+            {{ range $news.ByDate.Reverse }}
+            {{ if ne .Title "All News & Updates" }}
+            <article class="archive-card">
+                <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                <div class="archive-content">
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Summary | truncate 250 }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">Read full story →</a>
+                </div>
+            </article>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

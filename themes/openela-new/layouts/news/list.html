@@ -1,0 +1,103 @@
+{{ define "main" }}
+<div class="newsroom-v3">
+    <!-- Hero Section -->
+    <header class="v3-hero">
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="v3-badge">NEWS</span>
+                    <h1>Project Updates & Ecosystem Momentum</h1>
+                    <p>Stay current with news, releases, and ecosystem momentum.</p>
+                </div>
+                <div class="hero-visual">
+                    <!-- Placeholder for Cluster Icon -->
+                    <div class="cluster-icon">
+                        <div class="node center"></div>
+                        <div class="node n1"></div>
+                        <div class="node n2"></div>
+                        <div class="node n3"></div>
+                        <div class="node n4"></div>
+                        <div class="node n5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hide Scrollbar Styles -->
+        <style>
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+
+        <!-- Main Dashboard Grid -->
+        <div class="v3-dashboard" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+
+            <!-- Left: News -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <div>
+                        <h3>News</h3>
+                        <p>Latest announcements and project updates.</p>
+                    </div>
+                </div>
+                <div class="update-list no-scrollbar" style="max-height: 800px; overflow-y: auto; padding-right: 1rem;">
+                    {{ range .Pages.ByDate.Reverse }}
+                    <div class="update-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                        <div class="update-meta">
+                            <span class="update-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        </div>
+                        <h4 style="margin: 0.5rem 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">{{ .Summary | truncate 150 }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Right: Blogs -->
+            <div class="card dark">
+                <div class="card-header">
+                    <i class="fa-solid fa-blog"></i>
+                    <div>
+                        <h3>Blogs</h3>
+                        <p>Insights, tutorials, and ecosystem stories.</p>
+                    </div>
+                </div>
+                <div class="update-list no-scrollbar" style="max-height: 800px; overflow-y: auto; padding-right: 1rem;">
+                    {{ range where site.RegularPages "Section" "blog" }}
+                    <div class="update-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                        <div class="update-meta">
+                            <span class="update-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        </div>
+                        <h4 style="margin: 0.5rem 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">{{ .Summary | truncate 150 }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-v3">
+        <div class="container">
+            <p class="newsletter-eyebrow">Never miss a critical patch.</p>
+            <p class="newsletter-desc">Subscribe to our developer mailing list for technical advisories and ecosystem
+                milestones delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="work@company.com">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+</div>
+{{ end }}
