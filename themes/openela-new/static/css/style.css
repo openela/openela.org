@@ -693,6 +693,8 @@ ul {
 }
 
 .distro-card {
+  display: block;
+  height: 100%;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -701,6 +703,7 @@ ul {
   transition: all 0.2s var(--ease);
 }
 
+/* Whole card is a link, so it keeps the lift on hover */
 .distro-card:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
   transform: translateY(-3px);
