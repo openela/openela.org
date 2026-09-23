@@ -1,28 +1,9 @@
 {{ define "main" }}
 <div class="newsroom-v3">
-    <!-- Hero Section -->
-    <header class="v3-hero">
-        <div class="container">
-            <div class="hero-flex">
-                <div class="hero-text">
-                    <span class="v3-badge">NEWS</span>
-                    <h1>Project Updates & Ecosystem Momentum</h1>
-                    <p>Stay current with news, releases, and ecosystem momentum.</p>
-                </div>
-                <div class="hero-visual">
-                    <!-- Placeholder for Cluster Icon -->
-                    <div class="cluster-icon">
-                        <div class="node center"></div>
-                        <div class="node n1"></div>
-                        <div class="node n2"></div>
-                        <div class="node n3"></div>
-                        <div class="node n4"></div>
-                        <div class="node n5"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "News"
+        "title" "Project Updates & Ecosystem Momentum"
+        "subtitle" "Stay current with news, releases, and ecosystem momentum.") }}
 
     <div class="container">
         <!-- Hide Scrollbar Styles -->

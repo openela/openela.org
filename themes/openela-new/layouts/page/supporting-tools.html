@@ -66,13 +66,10 @@
 
 <div class="supporting-tools-page-v3">
     <!-- Hero Section -->
-    <header class="sources-hero text-center">
-        <div class="container">
-            <span class="sources-eyebrow">OpenELA Ecosystem</span>
-            <h1 class="sources-title">Supporting Tools</h1>
-            <p class="sources-subtitle">Essential resources and utilities maintained by the OpenELA community. OpenELA provides a collection of tools and services to support the Enterprise Linux ecosystem, from source archiving to workload migration.</p>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "OpenELA Ecosystem"
+        "title" "Supporting Tools"
+        "subtitle" "Essential resources and utilities maintained by the OpenELA community, from source archiving to workload migration.") }}
 
     <!-- Tools Showcase Section -->
     <section class="tools-showcase container">

@@ -1,19 +1,18 @@
 {{ define "main" }}
 <div class="about-page-v3">
-    <!-- Hero Section -->
-    <header class="about-hero-v3">
+    {{ partial "page-hero.html" (dict
+        "badge" "About"
+        "title" "About OpenELA"
+        "subtitle" "The Enterprise Linux ecosystem has historically relied on a single vendor-controlled standard. This creates cost pressure, lock-in, and barriers for ISVs, IHVs, and developers who need predictable, long-term compatibility.") }}
+
+    <!-- Positioning statement -->
+    <section class="about-statement-v3">
         <div class="container">
-            <h1>ABOUT</h1>
-            <div class="hero-grid">
-                <div class="hero-main">
-                    <p class="lead">The Enterprise Linux ecosystem has historically relied on a single vendor-controlled standard. This creates cost pressure, lock-in, and barriers for ISVs, IHVs, and developers who need predictable, long-term compatibility.</p>
-                </div>
-                <div class="hero-highlight">
-                    <p>The world needs a vendor-neutral, community-maintained Enterprise Linux standard that anyone can build, validate, and innovate on.</p>
-                </div>
+            <div class="hero-highlight">
+                <p>The world needs a vendor-neutral, community-maintained Enterprise Linux standard that anyone can build, validate, and innovate on.</p>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Mission Section -->
     <section class="mission-section-v3">
