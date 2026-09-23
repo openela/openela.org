@@ -499,11 +499,10 @@ ul {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 2rem;
-  transition: all 0.25s var(--ease);
+  transition: box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
 .pillar-card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, .07);
   border-color: #cbd5e1;
 }
@@ -648,7 +647,6 @@ ul {
 
 .value-item:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
-  transform: translateY(-3px);
 }
 
 .value-header {
@@ -1758,7 +1756,6 @@ ul {
 
 .provide-card-v3:hover {
   border-color: var(--blue);
-  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
 }
@@ -1806,7 +1803,6 @@ ul {
 .v3-scroll-item:hover {
   border-color: var(--blue);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  transform: translateY(-2px);
 }
 
 .scroll-item-header {
@@ -2689,7 +2685,6 @@ ul {
 }
 
 .join-level-card:hover {
-  transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
   border-color: #2563eb;
 }
@@ -2867,7 +2862,6 @@ ul {
 
 .participation-item:hover {
   border-color: #2563eb;
-  transform: translateY(-4px);
 }
 
 .participation-item i {
@@ -2972,7 +2966,6 @@ ul {
 }
 
 .elv-benefit-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   border-color: #2563eb;
 }
@@ -3159,7 +3152,6 @@ ul {
 }
 
 .sources-card:hover {
-  transform: translateY(-5px);
   border-color: #2563eb;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
