@@ -16,6 +16,15 @@
   --font: 'Inter', system-ui, sans-serif;
   --max-w: 1120px;
   --nav-height: 76px;
+
+  /* Type scale — every heading, pretitle and lead pulls from these */
+  --fs-eyebrow: 0.75rem;
+  --fs-h1: clamp(2.5rem, 1.6rem + 3.4vw, 3.75rem);
+  --fs-h2: clamp(1.75rem, 1.25rem + 1.6vw, 2.25rem);
+  --fs-h3: 1.5rem;
+  --fs-h4: 1.25rem;
+  --fs-h5: 1.0625rem;
+  --fs-lead: 1.125rem;
   --ease: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -201,7 +210,7 @@ ul {
 
 /* ─── Section Tags ───────────────────────────────── */
 .section-tag {
-  font-size: 0.7rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -233,7 +242,7 @@ ul {
 }
 
 .hero.is-compact .hero-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: var(--fs-h1);
   margin-bottom: 0.75rem;
   background: none !important;
   -webkit-text-fill-color: #fff !important;
@@ -244,7 +253,7 @@ ul {
 .hero.is-compact .hero-lead {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
-  font-size: 1.1rem;
+  font-size: var(--fs-lead);
   max-width: 700px;
 }
 
@@ -252,7 +261,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -266,7 +275,7 @@ ul {
 
 .hero-title {
   display: inline-block;
-  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-size: var(--fs-h1);
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 1.05;
@@ -275,7 +284,7 @@ ul {
 }
 
 .hero-lead {
-  font-size: 1.05rem;
+  font-size: var(--fs-lead);
   font-weight: 600;
   color: var(--blue);
   margin-bottom: 1rem;
@@ -334,7 +343,7 @@ ul {
 }
 
 .ecosystem h2 {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
@@ -440,7 +449,7 @@ ul {
 }
 
 .partners .section-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -478,7 +487,7 @@ ul {
 }
 
 .pillars .section-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -542,7 +551,7 @@ ul {
 }
 
 .pillar-card h3 {
-  font-size: 1rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   margin-bottom: 0.6rem;
   color: var(--dark);
@@ -629,7 +638,7 @@ ul {
 }
 
 .value-grid .section-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -664,7 +673,7 @@ ul {
 }
 
 .value-header h4 {
-  font-size: 0.95rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   color: var(--dark);
 }
@@ -682,7 +691,7 @@ ul {
 }
 
 .distributions .section-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -724,7 +733,7 @@ ul {
 }
 
 .distro-card h4 {
-  font-size: 0.95rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 0.5rem;
@@ -760,7 +769,7 @@ ul {
 }
 
 .cta-box h2 {
-  font-size: 2.25rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.025em;
   color: #fff;
@@ -798,7 +807,7 @@ ul {
 }
 
 .footer h4 {
-  font-size: 0.75rem;
+  font-size: var(--fs-eyebrow);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #fff;
@@ -899,7 +908,7 @@ ul {
   padding: 0.25rem 0.75rem;
   background: #cbd5e1;
   color: #475569;
-  font-size: 0.7rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   border-radius: 4px;
   margin-bottom: 1.5rem;
@@ -908,7 +917,7 @@ ul {
 
 .v3-hero h1 {
   font-family: var(--font);
-  font-size: 3rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   line-height: 1.15;
@@ -972,7 +981,7 @@ ul {
 }
 
 .card-header h3 {
-  font-size: 1.15rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 0.25rem;
@@ -1029,7 +1038,7 @@ ul {
 }
 
 .update-item h4 {
-  font-size: 1rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -1174,7 +1183,7 @@ ul {
 }
 
 .spotlight-card h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 1.25rem;
@@ -1238,7 +1247,7 @@ ul {
 }
 
 .newsletter-eyebrow {
-  font-size: 0.9rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 1rem;
@@ -1340,7 +1349,7 @@ ul {
 }
 
 .archive-card h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 800;
   margin-bottom: 1rem;
   color: #0f172a;
@@ -1413,7 +1422,7 @@ ul {
 }
 
 .post-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: var(--fs-h1);
   font-weight: 900;
   line-height: 1.1;
   color: var(--dark);
@@ -1435,7 +1444,7 @@ ul {
 }
 
 .post-content h2 {
-  font-size: 1.75rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   margin: 3rem 0 1.5rem;
   color: var(--dark);
@@ -1443,7 +1452,7 @@ ul {
 }
 
 .post-content h3 {
-  font-size: 1.4rem;
+  font-size: var(--fs-h4);
   font-weight: 700;
   margin: 2rem 0 1rem;
   color: var(--dark);
@@ -1554,7 +1563,7 @@ ul {
 }
 
 .nav-card h4 {
-  font-size: 1.15rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   color: var(--dark);
   line-height: 1.4;
@@ -1569,9 +1578,6 @@ ul {
     padding: 6rem 0 4rem;
   }
 
-  .post-title {
-    font-size: 2.25rem;
-  }
 }
 
 /* ─── About Page V3 (Overhauled) ──────────────────────────────── */
@@ -1594,7 +1600,7 @@ ul {
 
 .about-hero-v3 h1 {
   font-family: var(--font);
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1.5rem;
@@ -1611,7 +1617,7 @@ ul {
 }
 
 .about-hero-v3 .lead {
-  font-size: 1.15rem;
+  font-size: var(--fs-lead);
   color: #475569;
   line-height: 1.7;
 }
@@ -1622,7 +1628,7 @@ ul {
 }
 
 .about-hero-v3 .hero-highlight p {
-  font-size: 1.25rem;
+  font-size: var(--fs-lead);
   font-weight: 700;
   color: var(--dark);
   line-height: 1.5;
@@ -1642,7 +1648,7 @@ ul {
 }
 
 .mission-card .eyebrow {
-  font-size: 0.75rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   text-transform: uppercase;
   color: #00d1b2;
@@ -1652,7 +1658,7 @@ ul {
 }
 
 .mission-card h2 {
-  font-size: 1.75rem;
+  font-size: var(--fs-h2);
   font-weight: 700;
   line-height: 1.4;
   max-width: 900px;
@@ -1664,14 +1670,14 @@ ul {
 }
 
 .v3-section-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   color: var(--dark);
   margin-bottom: 0.5rem;
 }
 
 .v3-subtitle {
-  font-size: 1.1rem;
+  font-size: var(--fs-lead);
   color: #64748b;
 }
 
@@ -1702,7 +1708,7 @@ ul {
 }
 
 .provide-card-v3 h3 {
-  font-size: 1.1rem;
+  font-size: var(--fs-h5);
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--dark);
@@ -1763,7 +1769,7 @@ ul {
 }
 
 .scroll-item-header h3 {
-  font-size: 1.15rem;
+  font-size: var(--fs-h5);
   font-weight: 800;
   color: var(--dark);
 }
@@ -1825,7 +1831,7 @@ ul {
 }
 
 .v3-subheading {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 800;
   color: var(--dark);
   margin-bottom: 2rem;
@@ -1919,7 +1925,7 @@ ul {
 }
 
 .gp-inner h4 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   font-weight: 800;
   color: var(--dark);
   margin-bottom: 1rem;
@@ -1965,7 +1971,7 @@ ul {
 }
 
 .hub-title {
-  font-size: 2rem;
+  font-size: var(--fs-h2);
   font-weight: 900;
   color: var(--dark);
   margin-bottom: 2rem;
@@ -2023,7 +2029,7 @@ ul {
 }
 
 .hub-subtitle {
-  font-size: 1.15rem;
+  font-size: var(--fs-lead);
   font-weight: 800;
   color: var(--dark);
   margin-bottom: 1.25rem;
@@ -2143,14 +2149,14 @@ ul {
 
 .faq-eyebrow {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 0.75rem;
 }
 
 .faq-title-redesign {
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1rem;
@@ -2159,7 +2165,7 @@ ul {
 }
 
 .faq-subtitle-redesign {
-  font-size: 1.1rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   margin-bottom: 2rem;
 }
@@ -2293,7 +2299,7 @@ ul {
 }
 
 .faq-contact-box h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 0.5rem;
@@ -2304,14 +2310,8 @@ ul {
   color: #64748b;
 }
 
-@media (max-width: 768px) {
-  .faq-title-redesign {
-    font-size: 2.5rem;
-  }
-}
-
 .faq-category-header-redesign {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   font-weight: 800;
   color: #0f172a;
   margin: 3rem 0 1rem;
@@ -2340,7 +2340,7 @@ ul {
 
 .blog-eyebrow {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2349,7 +2349,7 @@ ul {
 }
 
 .blog-title {
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1rem;
@@ -2358,7 +2358,7 @@ ul {
 }
 
 .blog-subtitle {
-  font-size: 1.15rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   max-width: 600px;
   margin: 0 auto;
@@ -2415,7 +2415,7 @@ ul {
 }
 
 .blog-card-title {
-  font-size: 1.35rem;
+  font-size: var(--fs-h4);
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 1rem;
@@ -2477,7 +2477,7 @@ ul {
 }
 
 .blog-single-title {
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   max-width: 800px;
@@ -2487,7 +2487,7 @@ ul {
 }
 
 .blog-single-excerpt {
-  font-size: 1.25rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   max-width: 700px;
   margin: 0 auto;
@@ -2538,11 +2538,6 @@ ul {
 
 @media (max-width: 768px) {
 
-  .blog-title,
-  .blog-single-title {
-    font-size: 2.5rem;
-  }
-
   .blog-hero {
     padding: 6rem 0 4rem;
   }
@@ -2571,7 +2566,7 @@ ul {
 
 .join-eyebrow {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2580,7 +2575,7 @@ ul {
 }
 
 .join-title {
-  font-size: 4rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1.5rem;
@@ -2589,7 +2584,7 @@ ul {
 }
 
 .join-subtitle {
-  font-size: 1.25rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   max-width: 700px;
   margin: 0 auto;
@@ -2639,7 +2634,7 @@ ul {
 }
 
 .join-level-card h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   font-weight: 800;
   margin-bottom: 1rem;
   color: #0f172a;
@@ -2681,7 +2676,7 @@ ul {
 }
 
 .benefit-content h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #0f172a;
@@ -2710,7 +2705,7 @@ ul {
 }
 
 .join-cta-box h2 {
-  font-size: 3rem;
+  font-size: var(--fs-h2);
   font-weight: 900;
   margin-bottom: 1.5rem;
   position: relative;
@@ -2719,7 +2714,7 @@ ul {
 }
 
 .join-cta-box p {
-  font-size: 1.25rem;
+  font-size: var(--fs-lead);
   color: #94a3b8;
   max-width: 600px;
   margin: 0 auto 2.5rem;
@@ -2756,16 +2751,8 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .join-title {
-    font-size: 2.75rem;
-  }
-
   .join-cta-box {
     padding: 4rem 2rem;
-  }
-
-  .join-cta-box h2 {
-    font-size: 2.25rem;
   }
 
   .join-benefits-grid {
@@ -2825,7 +2812,7 @@ ul {
 
 .elv-eyebrow {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -2834,7 +2821,7 @@ ul {
 }
 
 .elv-title {
-  font-size: 4rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1.5rem;
@@ -2843,7 +2830,7 @@ ul {
 }
 
 .elv-subtitle {
-  font-size: 1.5rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   max-width: 800px;
   margin: 0 auto 2.5rem;
@@ -2872,7 +2859,7 @@ ul {
 }
 
 .elv-text-content h2 {
-  font-size: 2.5rem;
+  font-size: var(--fs-h2);
   font-weight: 800;
   margin-bottom: 1.5rem;
   color: #0f172a;
@@ -2913,7 +2900,7 @@ ul {
 }
 
 .elv-benefit-card h3 {
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
   font-weight: 800;
   margin-bottom: 1rem;
   color: #0f172a;
@@ -2946,7 +2933,7 @@ ul {
 }
 
 .elv-step h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   font-weight: 800;
   margin-bottom: 1rem;
   color: #0f172a;
@@ -3014,10 +3001,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .elv-title {
-    font-size: 2.75rem;
-  }
-
   .elv-content-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -3043,7 +3026,7 @@ ul {
 
 .sources-eyebrow {
   display: block;
-  font-size: 0.85rem;
+  font-size: var(--fs-eyebrow);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -3052,7 +3035,7 @@ ul {
 }
 
 .sources-title {
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 1.5rem;
@@ -3061,7 +3044,7 @@ ul {
 }
 
 .sources-subtitle {
-  font-size: 1.25rem;
+  font-size: var(--fs-lead);
   color: #64748b;
   max-width: 800px;
   margin: 0 auto;
@@ -3099,7 +3082,7 @@ ul {
 }
 
 .sources-card h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   font-weight: 800;
   margin-bottom: 1.25rem;
   color: #0f172a;
@@ -3154,9 +3137,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .sources-title {
-    font-size: 2.5rem;
-  }
 
   .doc-list {
     grid-template-columns: 1fr;
@@ -3358,4 +3338,51 @@ ul {
     border-radius: 4px;
     width: 100%;
   }
+}
+/* ─── Pretitles / eyebrows — one shared treatment ───────────────────── */
+.section-tag,
+.hero-eyebrow,
+.faq-eyebrow,
+.blog-eyebrow,
+.join-eyebrow,
+.sources-eyebrow,
+.elv-eyebrow,
+.newsletter-eyebrow,
+.mission-card .eyebrow,
+.v3-hero .v3-badge {
+  font-size: var(--fs-eyebrow);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ─── Heading tracking — one value per level ────────────────────────── */
+.hero-title,
+.v3-hero h1,
+.about-hero-v3 h1,
+.faq-title-redesign,
+.blog-title,
+.blog-single-title,
+.join-title,
+.sources-title,
+.elv-title,
+.post-title {
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.ecosystem h2,
+.partners .section-title,
+.pillars .section-title,
+.value-grid .section-title,
+.distributions .section-title,
+.cta-box h2,
+.v3-section-title,
+.hub-title,
+.join-cta-box h2,
+.elv-text-content h2,
+.mission-card h2,
+.post-content h2 {
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
