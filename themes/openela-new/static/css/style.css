@@ -3445,6 +3445,13 @@ ul {
 }
 
 
+/* Base section heading — page-scoped rules previously left these at the
+   browser default on ELValidated and Join. */
+.section-title {
+  font-size: var(--fs-h2);
+  font-weight: 800;
+}
+
 /* ─── Section heading rhythm ────────────────────────────────────────
    A heading sits --space-head above its content. Where a subtitle
    follows, the subtitle carries that gap and the heading tightens.  */
