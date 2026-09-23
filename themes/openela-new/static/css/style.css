@@ -487,7 +487,14 @@ ul {
   max-width: 540px;
 }
 
+.pillars .grid-2 {
+  align-items: stretch;
+}
+
 .pillar-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -543,6 +550,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-top: auto;
 }
 
 .pillar-tags span {
@@ -599,6 +607,10 @@ ul {
   color: var(--text-dim);
   transition: all 0.2s var(--ease);
   text-decoration: none;
+}
+
+.tag-link::after {
+  content: " \2192";
 }
 
 .tag-link:hover {
