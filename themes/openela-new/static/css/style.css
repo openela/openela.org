@@ -25,6 +25,9 @@
   --fs-h4: 1.25rem;
   --fs-h5: 1.0625rem;
   --fs-lead: 1.125rem;
+
+  /* One gap for every grid of cards */
+  --gap-cards: 30px;
   --ease: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -84,18 +87,18 @@ ul {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: var(--gap-cards);
   align-items: start;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: var(--gap-cards);
 }
 
 .gap-y-4 {
-  row-gap: 1.5rem;
+  row-gap: var(--gap-cards);
 }
 
 /* ─── Buttons ────────────────────────────────────── */
@@ -936,7 +939,7 @@ ul {
 .v3-dashboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gap-cards);
   margin-top: 4rem;
 }
 
@@ -1326,7 +1329,7 @@ ul {
 .archive-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--gap-cards);
   max-width: 800px;
 }
 
@@ -1533,7 +1536,7 @@ ul {
 .nav-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: var(--gap-cards);
 }
 
 .nav-card {
@@ -1684,7 +1687,7 @@ ul {
 .v3-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: var(--gap-cards);
 }
 
 /* Provide Cards */
@@ -1730,7 +1733,7 @@ ul {
 .v3-scrollable-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--gap-cards);
 }
 
 .v3-scroll-item {
@@ -1785,7 +1788,7 @@ ul {
 .v3-member-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: var(--gap-cards);
 }
 
 .v3-member-card {
@@ -2371,7 +2374,7 @@ ul {
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2.5rem;
+  gap: var(--gap-cards);
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -2599,7 +2602,7 @@ ul {
 .join-levels-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--gap-cards);
   margin-top: 3rem;
 }
 
@@ -2653,7 +2656,7 @@ ul {
 .join-benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 4rem;
+  gap: var(--gap-cards);
   margin-top: 4rem;
 }
 
@@ -2768,7 +2771,7 @@ ul {
 .participation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: var(--gap-cards);
   margin-top: 3rem;
 }
 
@@ -2876,7 +2879,7 @@ ul {
 .elv-benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: var(--gap-cards);
   margin-top: 3rem;
 }
 
@@ -2909,7 +2912,7 @@ ul {
 .elv-steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: var(--gap-cards);
   margin-top: 4rem;
 }
 
@@ -2947,7 +2950,7 @@ ul {
 .elv-tests-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  gap: var(--gap-cards);
   margin-top: 3rem;
 }
 
@@ -2979,7 +2982,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: var(--gap-cards);
   margin-top: 3rem;
 }
 
@@ -3058,7 +3061,7 @@ ul {
 .sources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  gap: var(--gap-cards);
   margin-top: 4rem;
 }
 
@@ -3115,7 +3118,7 @@ ul {
 .doc-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: var(--gap-cards);
   margin-top: 2rem;
 }
 
