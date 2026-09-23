@@ -1,13 +1,9 @@
 {{ define "main" }}
 <div class="faq-page-redesign">
-    <!-- Hero Section -->
-    <header class="faq-hero-redesign text-center">
-        <div class="container">
-            <span class="faq-eyebrow">FAQs</span>
-            <h1 class="faq-title-redesign">Frequently Asked Questions</h1>
-            <p class="faq-subtitle-redesign">Have questions? We're here to help.</p>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "FAQ"
+        "title" "Frequently Asked Questions"
+        "subtitle" "Have questions? We're here to help.") }}
 
     <section class="faq-body-redesign">
         <div class="container">

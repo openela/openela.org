@@ -1,13 +1,9 @@
 {{ define "main" }}
 <div class="sources-page-redesign">
-    <!-- Hero Section -->
-    <header class="sources-hero text-center">
-        <div class="container">
-            <span class="sources-eyebrow">Public Repositories</span>
-            <h1 class="sources-title">Explore the Enterprise Linux Source</h1>
-            <p class="sources-subtitle">OpenELA maintains a complete Enterprise Linux source package set in public repositories. Anyone can build from source, contribute patches, or maintain derived distributions.</p>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "Public Repositories"
+        "title" "Explore the Enterprise Linux Source"
+        "subtitle" "OpenELA maintains a complete Enterprise Linux source package set in public repositories. Anyone can build from source, contribute patches, or maintain derived distributions.") }}
 
     <!-- Main Content Grid -->
     <section class="sources-section">
