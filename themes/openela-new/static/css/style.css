@@ -28,6 +28,11 @@
 
   /* One gap for every grid of cards */
   --gap-cards: 30px;
+
+  /* Section surfaces — bands alternate between these two */
+  --surface-1: #ffffff;
+  --surface-2: #f8fafc;
+  --hero-bg: #eff6ff;
   --ease: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -937,7 +942,8 @@ ul {
 }
 
 .v3-hero {
-  background: #eff6ff;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
   padding: 60px 0;
   overflow: hidden;
 }
@@ -1432,7 +1438,8 @@ ul {
 .post-hero {
   padding: 8rem 0 6rem;
   text-align: center;
-  background: #fcfdfe;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
 }
 
 .post-meta {
@@ -1676,7 +1683,7 @@ ul {
 
 .about-statement-v3 {
   padding: 4rem 0;
-  background: #fcfdfe;
+  background: var(--surface-1);
 }
 
 .mission-section-v3 {
@@ -1996,7 +2003,7 @@ ul {
 
 /* Final Hub Section (Light Theme - Scaled Down) */
 .final-hub-section {
-  background: #f8fafc;
+  background: var(--surface-1);
   color: #334155;
   padding: 4rem 0;
   border-top: 1px solid var(--border);
@@ -2373,7 +2380,8 @@ ul {
 
 .blog-hero {
   padding: 8rem 0 6rem;
-  background: #ffffff;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -2494,7 +2502,8 @@ ul {
 
 .blog-single-hero {
   padding: 8rem 0 5rem;
-  background: #ffffff;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
 }
 
 .blog-meta-single {
@@ -2599,7 +2608,8 @@ ul {
 
 .join-hero {
   padding: 8rem 0 6rem;
-  background: #ffffff;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -2728,7 +2738,7 @@ ul {
 
 .join-cta-section {
   padding: 6rem 0 10rem;
-  background: #ffffff;
+  background: var(--surface-2);
 }
 
 .join-cta-box {
@@ -2801,7 +2811,7 @@ ul {
 
 .join-participation-section {
   padding: 6rem 0;
-  background: #f8fafc;
+  background: var(--surface-1);
 }
 
 .participation-grid {
@@ -3059,7 +3069,8 @@ ul {
 
 .sources-hero {
   padding: 8rem 0 6rem;
-  background: #f8fafc;
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -3424,4 +3435,18 @@ ul {
 .post-content h2 {
   letter-spacing: -0.02em;
   line-height: 1.2;
+}
+
+/* ─── Section bands ─────────────────────────────────────────────────
+   Soft-surface sections carry hairlines so adjacent bands stay
+   distinct even where two light sections meet.                      */
+.value-grid,
+.v3-section.bg-light,
+.elv-section-light,
+.join-levels-section,
+.join-cta-section,
+.faq-contact-section,
+.sources-section-alt {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
