@@ -1,6 +1,7 @@
 ---
 title: About
 layout: about
+type: page
 include_footer: true
 sidebar: false
 ---

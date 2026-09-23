@@ -1,6 +1,7 @@
 ---
 title: Supporting Tools
 layout: supporting-tools
+type: page
 include_footer: true
 ---
 

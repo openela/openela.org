@@ -3,6 +3,7 @@ title: OpenELA Frequently Asked Questions
 include_footer: true
 sidebar: false
 layout: faq
+type: page
 ---
 
 ### Understanding OpenELA
