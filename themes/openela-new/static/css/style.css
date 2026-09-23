@@ -157,6 +157,42 @@ ul {
   background: rgba(255, 255, 255, .1);
 }
 
+/* Tertiary CTA: pill outline with a trailing arrow */
+.is-pill {
+  background: var(--bg);
+  color: var(--text-dim);
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+}
+
+.is-pill::after {
+  content: "\2192";
+  transition: transform 0.2s var(--ease);
+}
+
+.is-pill:hover {
+  background: var(--blue-light);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.is-pill:hover::after {
+  transform: translateX(3px);
+}
+
+/* Same variant on dark sections */
+.is-white.is-pill {
+  background: transparent;
+  border-color: rgba(255, 255, 255, .35);
+  color: #fff;
+}
+
+.is-white.is-pill:hover {
+  background: rgba(255, 255, 255, .12);
+  border-color: rgba(255, 255, 255, .6);
+  color: #fff;
+}
+
 /* ─── Navbar ─────────────────────────────────────── */
 .navbar {
   height: var(--nav-height);
