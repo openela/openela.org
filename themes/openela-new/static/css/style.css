@@ -33,6 +33,10 @@
   --surface-1: #ffffff;
   --surface-2: #f8fafc;
   --hero-bg: #eff6ff;
+
+  /* Section heading rhythm */
+  --space-title: 0.875rem;  /* heading -> its own subtitle */
+  --space-head: 3rem;       /* heading block -> the content below */
   --ease: cubic-bezier(.4, 0, .2, 1);
 }
 
@@ -496,12 +500,12 @@ ul {
   font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-title);
 }
 
 .partners .subtitle {
   color: var(--text-dim);
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-head);
 }
 
 .partner-logos {
@@ -534,12 +538,12 @@ ul {
   font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-head);
 }
 
 .pillars .subtitle {
   color: var(--text-dim);
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-head);
   max-width: 540px;
 }
 
@@ -685,12 +689,12 @@ ul {
   font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-head);
 }
 
 .value-grid .subtitle {
   color: var(--text-dim);
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-head);
 }
 
 .value-item {
@@ -738,12 +742,12 @@ ul {
   font-size: var(--fs-h2);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-title);
 }
 
 .distributions .subtitle {
   color: var(--text-dim);
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-head);
 }
 
 .distro-card {
@@ -817,17 +821,16 @@ ul {
   font-weight: 800;
   letter-spacing: -0.025em;
   color: #fff;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-head);
 }
 
 .cta-box p {
   color: #94a3b8;
-  margin-bottom: 2.5rem;
   font-size: 0.95rem;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--space-head);
 }
 
 .cta-buttons {
@@ -982,7 +985,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap-cards);
-  margin-top: 4rem;
 }
 
 .releases-card {
@@ -1712,14 +1714,14 @@ ul {
 }
 
 .section-title-area {
-  margin-bottom: 3.5rem;
+  margin-bottom: var(--space-head);
 }
 
 .v3-section-title {
   font-size: var(--fs-h2);
   font-weight: 800;
   color: var(--dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-title);
 }
 
 .v3-subtitle {
@@ -2020,7 +2022,7 @@ ul {
   font-size: var(--fs-h2);
   font-weight: 900;
   color: var(--dark);
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-head);
   letter-spacing: -0.02em;
 }
 
@@ -2078,7 +2080,7 @@ ul {
   font-size: var(--fs-lead);
   font-weight: 800;
   color: var(--dark);
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--space-head);
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
 }
@@ -2649,7 +2651,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 3rem;
 }
 
 .join-level-card {
@@ -2703,7 +2704,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 4rem;
 }
 
 .benefit-item {
@@ -2756,7 +2756,7 @@ ul {
 .join-cta-box h2 {
   font-size: var(--fs-h2);
   font-weight: 900;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-title);
   position: relative;
   z-index: 2;
   letter-spacing: -0.02em;
@@ -2766,7 +2766,7 @@ ul {
   font-size: var(--fs-lead);
   color: #94a3b8;
   max-width: 600px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto var(--space-head);
   position: relative;
   z-index: 2;
 }
@@ -2818,7 +2818,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 3rem;
 }
 
 .participation-item {
@@ -2910,7 +2909,7 @@ ul {
 .elv-text-content h2 {
   font-size: var(--fs-h2);
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-title);
   color: #0f172a;
   letter-spacing: -0.02em;
 }
@@ -2926,7 +2925,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 3rem;
 }
 
 .elv-benefit-card {
@@ -2959,7 +2957,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap-cards);
-  margin-top: 4rem;
 }
 
 .elv-step {
@@ -2997,7 +2994,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 3rem;
 }
 
 .elv-test-item {
@@ -3029,7 +3025,6 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--gap-cards);
-  margin-top: 3rem;
 }
 
 .elv-distro-item {
@@ -3109,7 +3104,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--gap-cards);
-  margin-top: 4rem;
 }
 
 .sources-card {
@@ -3166,7 +3160,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap-cards);
-  margin-top: 2rem;
 }
 
 .doc-item {
@@ -3449,4 +3442,41 @@ ul {
 .sources-section-alt {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+
+/* ─── Section heading rhythm ────────────────────────────────────────
+   A heading sits --space-head above its content. Where a subtitle
+   follows, the subtitle carries that gap and the heading tightens.  */
+.section-title,
+.ecosystem h2,
+.mission-card h2 {
+  margin-bottom: var(--space-head);
+}
+
+.section-title:has(+ .subtitle),
+.section-title:has(+ .elv-subtitle),
+.section-title:has(+ .join-subtitle),
+.section-title:has(+ .v3-subtitle),
+.section-title:has(+ p),
+.ecosystem h2:has(+ p) {
+  margin-bottom: var(--space-title);
+}
+
+.v3-subtitle,
+.elv-subtitle,
+.join-subtitle {
+  margin-bottom: var(--space-head);
+}
+
+/* Inside a heading wrapper the wrapper owns the gap, not the last child */
+.section-title-area .v3-subtitle,
+.section-title-area .elv-subtitle,
+.section-title-area .subtitle {
+  margin-bottom: 0;
+}
+
+/* Governance intro block sits above its content like any section head */
+.gov-header-v3 {
+  margin-bottom: var(--space-head);
 }
