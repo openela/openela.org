@@ -3,9 +3,7 @@ baseURL: https://openela.org/
 locale: en-us
 title: OpenEL Association
 
-module:
-  imports:
-    path: github.com/StefMa/hugo-fresh
+theme: openela-new
 
 outputs:
   home:
@@ -31,7 +29,7 @@ params:
   openGraph: true
   description: OpenELA
   navbarlogo:
-    image: logos/openELA.svg
+    image: images/logos/openELA.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -61,18 +59,18 @@ params:
       - logo: suse
         url: https://www.suse.com
   navbar:
-    - title: About
-      url: /about
-    - title: Join
-      url: /join
-    - title: Git/Main
-      url: https://github.com/orgs/openela-main/repositories
+    - title: Sources
+      url: /sources
+    - title: Supporting Tools
+      url: /supporting-tools
+    - title: ELValidated
+      url: /elvalidated
     - title: FAQ
       url: /faq
-    - title: Governance
-      url: https://github.com/openela/governance
     - title: News
       url: /news
+    - title: About
+      url: /about
   section1:
     title: Main OpenELA projects
     subtitle: |
@@ -131,19 +129,23 @@ params:
     buttonText: GitHub
     buttonLink: https://github.com/openela/
   footer:
-    logo: openELA.svg
+    logo: logos/openELA.svg
     socialmediatitle: Follow Us
     socialmedia:
-    - link: https://github.com/openela
+    - name: GitHub
+      link: https://github.com/openela
       icon: fa-brands fa-github
       target: _blank
-    - link: https://x.com/@openelaorg
+    - name: X (Twitter)
+      link: https://x.com/@openelaorg
       icon: fa-brands fa-x-twitter
       target: _blank
-    - link: https://fosstodon.org/@openela
+    - name: Mastodon
+      link: https://fosstodon.org/@openela
       icon: fa-brands fa-mastodon
       target: _blank
-    - link: https://www.linkedin.com/company/openela
+    - name: LinkedIn
+      link: https://www.linkedin.com/company/openela
       icon: fa-brands fa-linkedin
       target: _blank
     quicklinks:

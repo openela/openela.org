@@ -1,0 +1,84 @@
+{{ define "main" }}
+<div class="sources-page-redesign">
+    {{ partial "page-hero.html" (dict
+        "badge" "Public Repositories"
+        "title" "Explore the Enterprise Linux Source"
+        "subtitle" "OpenELA maintains a complete Enterprise Linux source package set in public repositories. Anyone can build from source, contribute patches, or maintain derived distributions.") }}
+
+    <!-- Main Content Grid -->
+    <section class="sources-section">
+        <div class="container">
+            <div class="sources-grid">
+                <!-- Repositories -->
+                <div class="sources-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Repositories</h3>
+                    <p>Access package origins, build tools, patch workflows, and release branches for the entire Enterprise Linux stack.</p>
+                    <ul class="sources-links">
+                        <li><a href="https://github.com/orgs/openela-main/repositories">View Core Repos &rarr;</a></li>
+                        <li><a href="https://github.com/openela">Explore Tools & Utilities &rarr;</a></li>
+                    </ul>
+                </div>
+
+                <!-- Developer Resources -->
+                <div class="sources-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Developer Resources</h3>
+                    <p>OpenELA welcomes contributions across packaging, testing, documentation, and tooling.</p>
+                    <ul class="sources-links">
+                        <li><a href="https://github.com/openela">Contribute on GitHub &rarr;</a></li>
+                    </ul>
+                    <div class="doc-list" style="margin-top: 1.5rem; border-top: 1px solid #e2e8f0; padding-top: 1.5rem;">
+                        <div class="doc-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>How to contribute (PR workflow)</p>
+                        </div>
+                        <div class="doc-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Code and packaging standards</p>
+                        </div>
+                        <div class="doc-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Release cadence and LTM model</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentation Section -->
+            <div class="sources-card" style="margin-top: 3rem; width: 100%;">
+                <div class="elv-content-grid" style="gap: 4rem;">
+                    <div>
+                        <i class="fas fa-book" style="font-size: 2rem; color: #2563eb; margin-bottom: 1.5rem;"></i>
+                        <h3 style="font-size: var(--fs-h3); font-weight: 800; margin-bottom: 1rem;">Documentation</h3>
+                        <p style="color: #64748b;">Step-by-step instructions and reference materials for developers building on the OpenELA foundation.</p>
+                    </div>
+                    <div class="doc-list" style="margin-top: 0;">
+                        <div class="doc-item">
+                            <i class="fas fa-file-alt"></i>
+                            <p>Build and installation guides</p>
+                        </div>
+                        <div class="doc-item">
+                            <i class="fas fa-history"></i>
+                            <p>Changelogs and update notes</p>
+                        </div>
+                        <div class="doc-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <p>ABI and compatibility documentation</p>
+                        </div>
+                        <div class="doc-item">
+                            <i class="fas fa-lock"></i>
+                            <p>Security patching process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Slogan -->
+            <div class="text-center" style="margin-top: 6rem;">
+                <h2 style="font-size: var(--fs-h2); color: #0f172a; font-weight: 900; letter-spacing: -0.02em;">Clone the source. Build your distro. Contribute to the commons.</h2>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

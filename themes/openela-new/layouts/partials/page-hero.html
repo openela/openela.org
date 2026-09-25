@@ -1,0 +1,13 @@
+{{/*
+  Shared page hero — the same treatment used on the News index.
+  Params: badge (optional), title (required), subtitle (optional, may contain HTML).
+*/}}
+<header class="v3-hero">
+    <div class="container">
+        <div class="hero-text">
+            {{ with .badge }}<span class="v3-badge">{{ . }}</span>{{ end }}
+            <h1>{{ .title }}</h1>
+            {{ with .subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
+        </div>
+    </div>
+</header>

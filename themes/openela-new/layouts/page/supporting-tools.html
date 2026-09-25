@@ -1,0 +1,143 @@
+{{ define "main" }}
+<style>
+  .tools-showcase {
+    padding: 6rem 0;
+  }
+  .tool-row {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 7rem;
+  }
+  .tool-row:last-child {
+    margin-bottom: 3rem;
+  }
+  .tool-row.reverse {
+    flex-direction: row-reverse;
+  }
+  .tool-content {
+    flex: 1;
+  }
+  .tool-visual {
+    flex: 1;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  }
+  .tool-visual:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.06);
+    border-color: var(--blue);
+  }
+  .tool-visual img {
+    max-width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+  }
+  .tool-title {
+    font-size: var(--fs-h2);
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: var(--space-title);
+    letter-spacing: -0.02em;
+  }
+  .tool-desc {
+    font-size: var(--fs-lead);
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: var(--space-head);
+  }
+  @media (max-width: 900px) {
+    .tool-row, .tool-row.reverse {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .tool-visual {
+      width: 100%;
+      padding: 3rem;
+    }
+  }
+</style>
+
+<div class="supporting-tools-page-v3">
+    <!-- Hero Section -->
+    {{ partial "page-hero.html" (dict
+        "badge" "OpenELA Ecosystem"
+        "title" "Supporting Tools"
+        "subtitle" "Essential resources and utilities maintained by the OpenELA community, from source archiving to workload migration.") }}
+
+    <!-- Tools Showcase Section -->
+    <section class="tools-showcase container">
+        <!-- Mothership -->
+        <div class="tool-row">
+            <div class="tool-content">
+                <h2 class="tool-title">Mothership</h2>
+                <p class="tool-desc">The Mothership project is a collection of tools and services to archive RPM package source and attest to their authenticity. It ensures that the source code used to build Enterprise Linux is securely preserved and universally verifiable by the community.</p>
+                <a href="https://github.com/openela/mothership" class="btn-v3" target="_blank">View on GitHub <i class="fab fa-github" style="margin-left: 8px;"></i></a>
+            </div>
+            <div class="tool-visual">
+                <img src="/images/icons/mship_gopher_dark.svg" alt="Mothership Logo">
+            </div>
+        </div>
+
+        <!-- Leapp -->
+        <div class="tool-row reverse">
+            <div class="tool-content">
+                <h2 class="tool-title">Leapp</h2>
+                <p class="tool-desc">Leapp is an existing open source project that aims to serve as an expert advisor for moving operating systems (OS) workloads to newer Enterprise Linux OS versions by generating suggested actions, identifying risks, producing checklists, and automating steps for users.</p>
+                <a href="https://github.com/oamg/leapp" class="btn-v3" target="_blank">Explore Leapp <i class="fas fa-external-link-alt" style="margin-left: 8px;"></i></a>
+            </div>
+            <div class="tool-visual" style="background: #ffffff;">
+                <img src="/images/icons/leapp.png" alt="Leapp Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribution Hub -->
+    <section class="v3-section final-hub-section">
+        <div class="container">
+            <div class="hub-grid">
+                <div class="hub-participate">
+                    <h2 class="hub-title">Contribute to Tools</h2>
+                    <div class="participate-list">
+                        <div class="p-item">
+                            <div class="p-icon"><i class="fab fa-github"></i></div>
+                            <div class="p-text">Open issues on GitHub</div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-icon"><i class="fas fa-code-branch"></i></div>
+                            <div class="p-text">Submit Pull Requests</div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-icon"><i class="fas fa-comments"></i></div>
+                            <div class="p-text">Join technical discussions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-participate">
+                    <h2 class="hub-title">Developer Resources</h2>
+                    <div class="participate-list">
+                        <a href="https://github.com/openela" class="p-item" target="_blank" style="text-decoration: none;">
+                            <div class="p-icon"><i class="fab fa-github"></i></div>
+                            <div class="p-text">Main GitHub Organization</div>
+                        </a>
+                        <a href="https://github.com/openela/openela-documentation" class="p-item" target="_blank" style="text-decoration: none;">
+                            <div class="p-icon"><i class="fas fa-book"></i></div>
+                            <div class="p-text">Technical Documentation</div>
+                        </a>
+                        <a href="/join" class="p-item" style="text-decoration: none;">
+                            <div class="p-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="p-text">Join the Association</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

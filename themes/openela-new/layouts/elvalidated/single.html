@@ -1,0 +1,311 @@
+{{ define "main" }}
+<div class="elv-page-redesign">
+    <!-- Hero Section -->
+    <header class="sources-hero text-center">
+        <div class="container">
+            <span class="sources-eyebrow">Project ELValidated</span>
+            <h1 class="sources-title">The Open Standard for<br>EL Interoperability</h1>
+            <p class="sources-subtitle">Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.</p>
+            <div style="margin-top: 2rem;">
+                <a href="https://github.com/openela/ELValidated" class="button is-primary">Validate Your Software Today</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="elv-section">
+        <div class="container">
+            <div class="elv-content-grid">
+                <div class="elv-text-content">
+                    <span class="elv-eyebrow">Overview</span>
+                    <h2>What Is ELValidated?</h2>
+                    <p>ELValidated is an open source verification and interoperability suite for Enterprise Linux
+                        operating systems developed by OpenELA. It is a toolkit and framework that allows you to
+                        validate the binary interface of libraries in a given operating system, and compare against
+                        published ABIs to verify that your application is compatible with the Enterprise Linux standard.
+                    </p>
+                    <p>Powered by open source library <code>libabigail</code>, ELValidated helps ensure that
+                        applications and libraries built on one system compatible with OpenELA Compatibility Standard
+                        will run on another compatible system.</p>
+                    <p>For independent software and hardware vendors (ISVs and IHVs), individual developers,
+                        contributors, and the end users that rely on their deliverables, it means confidence that
+                        applications will run as expected. And for the entire EL ecosystem, it means trust.</p>
+                </div>
+                <div class="elv-visual">
+                    <div class="join-level-card" style="padding: 4rem;">
+                        <i class="fas fa-shield-check"
+                            style="font-size: 5rem; color: #2563eb; margin-bottom: 2rem;"></i>
+                        <h3 style="font-size: var(--fs-h3); margin-bottom: 1rem;">Test Once. Trust More.</h3>
+                        <p>Confidence for ISVs, IHVs, and developers that applications run as expected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Compatibility Matters -->
+    <section class="elv-section elv-section-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="elv-eyebrow">The Value of Standards</span>
+                <h2 class="section-title">Why Compatibility Matters</h2>
+                <p class="elv-subtitle" style="max-width: 900px;">ISVs and IHVs rely on predictable
+                    ABI behavior to reduce support burdens and deliver consistent experiences. Enterprises want
+                    deployment flexibility without re-qualifying workloads for every distribution. Developers need a
+                    stable platform to build upon.</p>
+            </div>
+
+            <div class="elv-benefits-grid">
+                <div class="elv-benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Save Time & Resources</h3>
+                    <p>Skip unneeded rebuilds, modifications and retests for multiple distributions.</p>
+                </div>
+                <div class="elv-benefit-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Ship with Confidence</h3>
+                    <p>Spot compatibility issues early, before they derail release cycles.</p>
+                </div>
+                <div class="elv-benefit-card">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    <h3>Increase Scope of Support</h3>
+                    <p>Expand coverage of supported distributions without increasing development effort.</p>
+                </div>
+                <div class="elv-benefit-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Empower User Choice</h3>
+                    <p>Support all major OpenELA-compatible distros with a single validated build.</p>
+                </div>
+                <div class="elv-benefit-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Build Trust</h3>
+                    <p>A shared ABI standard proves your claims with hard verifiable data.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 4rem;">
+                <p style="color: #64748b; font-style: italic;">ELValidated was developed by the OpenELA community for
+                    everyone, is free to use, and its usage is not limited to OpenELA compatible distros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Validation Works -->
+    <section class="elv-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="elv-eyebrow">Process</span>
+                <h2 class="section-title">How Validation Works</h2>
+            </div>
+
+            <div class="elv-steps-grid">
+                <div class="elv-step">
+                    <div class="elv-step-number">1</div>
+                    <h3>Compare</h3>
+                    <p>Scan against ELValidated’s trusted ABI reference.</p>
+                </div>
+                <div class="elv-step">
+                    <div class="elv-step-number">2</div>
+                    <h3>Analyze</h3>
+                    <p>Detect binary-level ABI differences.</p>
+                </div>
+                <div class="elv-step">
+                    <div class="elv-step-number">3</div>
+                    <h3>Validate</h3>
+                    <p>Get clear reports that immediately highlight possible risks or no risks at all.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 5rem;">
+                <p style="color: #64748b; margin-bottom: 2rem;">ELValidated is ready to use in production, with features
+                    that deliver reliable scaling with simplicity of deployment and ops.</p>
+                <div style="display: flex; justify-content: center; gap: 2rem;">
+                    <a href="https://github.com/openela/Compatibility" style="font-weight: 700; color: #2563eb;">→
+                        Download on GitHub</a>
+                    <a href="#" style="font-weight: 700; color: #2563eb;">→ Read the Validation Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What ELValidated Tests -->
+    <section class="elv-section elv-section-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="elv-eyebrow">Verification Scope</span>
+                <h2 class="section-title">What ELValidated Tests</h2>
+            </div>
+
+            <div class="elv-tests-grid">
+                <div class="elv-test-item">
+                    <i class="fas fa-check"></i>
+                    <span>ABI consistency</span>
+                </div>
+                <div class="elv-test-item">
+                    <i class="fas fa-check"></i>
+                    <span>Core system libraries</span>
+                </div>
+                <div class="elv-test-item">
+                    <i class="fas fa-check"></i>
+                    <span>Application runtime behavior</span>
+                </div>
+                <div class="elv-test-item">
+                    <i class="fas fa-check"></i>
+                    <span>Compiler and toolchain expectations</span>
+                </div>
+                <div class="elv-test-item">
+                    <i class="fas fa-check"></i>
+                    <span>Filesystem and environment conventions</span>
+                </div>
+            </div>
+        </div>
+        <!-- Why Use ELValidated? -->
+        <section class="elv-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="elv-eyebrow">The Value Prop</span>
+                    <h2 class="section-title">Why Use ELValidated?</h2>
+                    <h3
+                        style="font-size: var(--fs-h3); color: #2563eb; margin-bottom: 2rem; font-weight: 900; letter-spacing: -0.02em;">
+                        Validate once. Run anywhere.</h3>
+                </div>
+
+                <div style="max-width: 900px; margin: 0 auto 4rem; text-align: center;">
+                    <p style="font-size: var(--fs-lead); color: #475569; line-height: 1.8;">ELValidated reduces fragmentation
+                        and enables ISVs and IHVs to support multiple distributions with significantly lower re-testing
+                        or certification cost.</p>
+                </div>
+
+                <div class="join-levels-grid">
+                    <div class="join-level-card">
+                        <div class="level-icon-box">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>For Enterprises</h3>
+                        <p>Ensures workloads behave consistently across validated platforms.</p>
+                    </div>
+                    <div class="join-level-card">
+                        <div class="level-icon-box">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>For Distros</h3>
+                        <p>Provides a clear, open benchmark to demonstrate compatibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For ISVs Section -->
+        <section class="elv-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="elv-eyebrow">For ISVs</span>
+                    <h2 class="section-title">Validate Once, Run Everywhere</h2>
+                    <p class="elv-subtitle">ELValidated reduces
+                        fragmentation and enables ISVs and IHVs to support multiple distributions with significantly
+                        lower re-testing or certification cost.</p>
+                </div>
+
+                <div class="join-levels-grid">
+                    <div class="join-level-card" style="text-align: left; align-items: flex-start;">
+                        <h3>Expand your reach</h3>
+                        <p>Ship one build that works across Rocky Linux, SUSE Multi-Linux, Oracle Linux, and others.</p>
+                    </div>
+                    <div class="join-level-card" style="text-align: left; align-items: flex-start;">
+                        <h3>Accelerate Release Cycles</h3>
+                        <p>Validate on new OS versions early—no waiting on full vendor QA loops.</p>
+                    </div>
+                    <div class="join-level-card" style="text-align: left; align-items: flex-start;">
+                        <h3>Reduce support costs</h3>
+                        <p>Reduce distro-specific bugs and support tickets.</p>
+                    </div>
+                    <div class="join-level-card" style="text-align: left; align-items: flex-start;">
+                        <h3>Win more deals and keep end users happy</h3>
+                        <p>Prove compatibility with real data—great for RFPs, partner programs, and SLAs.</p>
+                    </div>
+                    <div class="join-level-card" style="text-align: left; align-items: flex-start;">
+                        <h3>Improve security</h3>
+                        <p>Shipping same application compatible with all of your target distributions minimizes risk of
+                            unexpected security issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <section class="elv-section elv-section-light">
+            <div class="container">
+                <div class="text-center">
+                    <span class="elv-eyebrow">Onboarding</span>
+                    <h2 class="section-title">Get Started</h2>
+                    <p class="elv-subtitle">ELValidated ensures your
+                        software works everywhere Enterprise Linux runs.</p>
+                </div>
+
+                <div class="elv-steps-grid">
+                    <div class="elv-step">
+                        <div class="elv-step-number">1</div>
+                        <h3><a href="https://github.com/openela/ELValidated"
+                                style="color: #2563eb; text-decoration: none;">Download ELValidated &rarr;</a></h3>
+                        <p>Get the latest verification suite from our official <a
+                                href="https://github.com/openela/ELValidated" style="color: #2563eb;">GitHub
+                                repository</a>.</p>
+                    </div>
+                    <div class="elv-step">
+                        <div class="elv-step-number">2</div>
+                        <h3>Run your first scan</h3>
+                        <p>Execute the validation toolkit against your application in minutes.</p>
+                    </div>
+                    <div class="elv-step">
+                        <div class="elv-step-number">3</div>
+                        <h3>Get a clear report</h3>
+                        <p>Receive detailed insights into your application's binary compatibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Validated Distributions -->
+        <section class="elv-distros-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="elv-eyebrow">The Standard</span>
+                    <h2 class="section-title">Validated Distributions</h2>
+                    <p class="elv-subtitle">ELValidated sets a common baseline for application
+                        compatibility across Enterprise Linux distributions.</p>
+                </div>
+
+                <div class="elv-distro-list">
+                    <div class="elv-distro-item">
+                        <i class="fas fa-server"></i>
+                        Oracle Linux
+                    </div>
+                    <div class="elv-distro-item">
+                        <i class="fas fa-server"></i>
+                        Rocky Linux
+                    </div>
+                    <div class="elv-distro-item">
+                        <i class="fas fa-server"></i>
+                        SUSE Linux Enterprise
+                    </div>
+                </div>
+                <p class="text-center" style="margin-top: 3rem; color: #94a3b8;">...and more are on the way.</p>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="join-cta-section">
+            <div class="container">
+                <div class="join-cta-box">
+                    <div class="cta-bg-shape"
+                        style="background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);">
+                    </div>
+                    <h2>Get Involved</h2>
+                    <p>Test once. Trust more. Join the ecosystem.</p>
+                    <a href="/join" class="join-cta-btn" style="background: white; color: #2563eb;">Join the
+                        Compatibility Working Group &rarr;</a>
+                </div>
+            </div>
+        </section>
+</div>
+{{ end }}
