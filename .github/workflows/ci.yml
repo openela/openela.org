@@ -10,7 +10,7 @@ on:
       - closed
     paths-ignore:
       - '.github/workflows/**'
-  
+
 concurrency: preview-${{ github.ref }}
 
 jobs:
@@ -18,32 +18,42 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.161.1
-      PREVIEW_BASE_URL: https://openela.github.io/openela.org-preview/
+      PREVIEW_BASE_URL: https://openela.github.io/openela.org-preview
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
-      - name: hugo
-        uses: floryn90/actions-hugo@1.0.1
+      - name: Install Hugo CLI
         if: github.event.action != 'closed'
-        with:
-          version: 0.161.1
-          image: ext-alpine
-          command: --minify --baseURL ${PREVIEW_BASE_URL}/preview_${{ github.sha }}
+        run: |
+          wget -O "${{ runner.temp }}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb" \
+          && sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+
+      - name: Build with Hugo
+        if: github.event.action != 'closed'
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${PREVIEW_BASE_URL}/openela.org/pr/${{ github.event.number }}/"
 
       - name: Deploy preview
         uses: EndBug/pages-preview@v1
         with:
           build_dir: public
-          preview_base_url: ${PREVIEW_BASE_URL}
+          preview_base_url: ${{ env.PREVIEW_BASE_URL }}
           preview_repo: openela/openela.org-preview
           preview_token: ${{ secrets.PREVIEW_TOKEN }}
           pr_comment: true
           deployments: false
           git_author_name: OpenELA Preview
           git_author_email: noreply@openela.org
-          git_commiter_name: OpenELA Preview
-          git_commiter_email: noreply@openela.org
+          git_committer_name: OpenELA Preview
+          git_committer_email: noreply@openela.org
