@@ -13,6 +13,11 @@ on:
 
 concurrency: preview-${{ github.ref }}
 
+permissions:
+  contents: read
+  deployments: write
+  pull-requests: write
+
 jobs:
   deploy-preview:
     runs-on: ubuntu-latest
@@ -52,7 +57,7 @@ jobs:
           preview_repo: openela/openela.org-preview
           preview_token: ${{ secrets.PREVIEW_TOKEN }}
           pr_comment: true
-          deployments: false
+          deployments: true
           git_author_name: OpenELA Preview
           git_author_email: noreply@openela.org
           git_committer_name: OpenELA Preview
