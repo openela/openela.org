@@ -47,7 +47,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${PREVIEW_BASE_URL}/openela.org/pr/${{ github.event.number }}/"
+            --baseURL "${PREVIEW_BASE_URL}/${{ github.repository }}/pr/${{ github.event.number }}/"
 
       - name: Deploy preview
         uses: EndBug/pages-preview@v1
