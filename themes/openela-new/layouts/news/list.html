@@ -6,19 +6,8 @@
         "subtitle" "Stay current with news, releases, and ecosystem momentum.") }}
 
     <div class="container">
-        <!-- Hide Scrollbar Styles -->
-        <style>
-            .no-scrollbar::-webkit-scrollbar {
-                display: none;
-            }
-            .no-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-        </style>
-
         <!-- Main Dashboard Grid -->
-        <div class="v3-dashboard" style="grid-template-columns: 1fr 1fr; align-items: start;">
+        <div class="v3-dashboard">
 
             <!-- Left: News -->
             <div class="card">
@@ -29,16 +18,20 @@
                         <p>Latest announcements and project updates.</p>
                     </div>
                 </div>
-                <div class="update-list no-scrollbar" style="max-height: 800px; overflow-y: auto; padding-right: 1rem;">
-                    {{ range .Pages.ByDate.Reverse }}
-                    <div class="update-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <div class="update-list">
+                    {{ $news := where .Pages "Layout" "!=" "archive" }}
+                    {{ range first 4 $news.ByDate.Reverse }}
+                    <div class="update-item">
                         <div class="update-meta">
                             <span class="update-date">{{ .Date.Format "Jan 2, 2006" }}</span>
                         </div>
-                        <h4 style="margin: 0.5rem 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">{{ .Summary | truncate 150 }}</p>
+                        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                        <p>{{ .Summary | truncate 150 }}</p>
                     </div>
                     {{ end }}
+                </div>
+                <div class="card-footer-link">
+                    <a class="text-link" href="{{ "news/archive/" | relURL }}">View all news &rarr;</a>
                 </div>
             </div>
 
@@ -51,16 +44,20 @@
                         <p>Insights, tutorials, and ecosystem stories.</p>
                     </div>
                 </div>
-                <div class="update-list no-scrollbar" style="max-height: 800px; overflow-y: auto; padding-right: 1rem;">
-                    {{ range where site.RegularPages "Section" "blog" }}
-                    <div class="update-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <div class="update-list">
+                    {{ $blog := where site.RegularPages "Section" "blog" }}
+                    {{ range first 4 $blog.ByDate.Reverse }}
+                    <div class="update-item">
                         <div class="update-meta">
                             <span class="update-date">{{ .Date.Format "Jan 2, 2006" }}</span>
                         </div>
-                        <h4 style="margin: 0.5rem 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-                        <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">{{ .Summary | truncate 150 }}</p>
+                        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                        <p>{{ .Summary | truncate 150 }}</p>
                     </div>
                     {{ end }}
+                </div>
+                <div class="card-footer-link">
+                    <a class="text-link" href="{{ "blog/" | relURL }}">View all blog posts &rarr;</a>
                 </div>
             </div>
 

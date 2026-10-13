@@ -1119,6 +1119,35 @@ ul {
   color: #94a3b8;
 }
 
+.card.dark .update-item {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.card.dark .update-item p {
+  color: #94a3b8;
+}
+
+/* Newsroom: two equal columns, spaced off the hero by the card gap */
+.newsroom-v3 .v3-dashboard {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-top: var(--gap-cards);
+}
+
+.card-footer-link {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.card.dark .card-footer-link {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.card.dark .text-link {
+  color: #00d1b2;
+}
+
 .highlight-box {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.25rem;
