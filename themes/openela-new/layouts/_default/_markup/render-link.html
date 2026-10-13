@@ -1,4 +1,4 @@
 {{- /* Root-relative links in markdown (e.g. "/join") get the baseURL path prepended, so they work on previews served from a subpath as well as in production. */ -}}
 {{- $u := .Destination -}}
-{{- if and (hasPrefix $u "/") (not (hasPrefix $u "//")) -}}{{- $u = $u | relURL -}}{{- end -}}
+{{- if and (hasPrefix $u "/") (not (hasPrefix $u "//")) -}}{{- $u = strings.TrimPrefix "/" $u | relURL -}}{{- end -}}
 <a href="{{ $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
