@@ -270,7 +270,8 @@ ul {
 /* ─── Hero ───────────────────────────────────────── */
 .hero {
   padding: 7rem 0 7rem;
-  background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
+  background: var(--hero-bg);
+  border-bottom: 1px solid var(--border);
   overflow: hidden;
   text-align: center;
 }
@@ -778,6 +779,12 @@ ul {
   letter-spacing: 0.1em;
   color: #1e6768;
   margin-bottom: 1rem;
+}
+
+.distro-logo img {
+  height: 32px;
+  width: auto;
+  max-width: 140px;
 }
 
 .distro-card h4 {
@@ -2778,6 +2785,11 @@ ul {
   background: var(--surface-2);
 }
 
+.elv-page-redesign .join-cta-section {
+  padding-bottom: 6rem;
+  border-bottom: none;
+}
+
 .join-cta-box {
   background: #0f172a;
   color: #ffffff;
@@ -3029,7 +3041,7 @@ ul {
 
 .elv-tests-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: var(--gap-cards);
 }
 
@@ -3037,14 +3049,29 @@ ul {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 1.75rem 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  text-align: center;
+  gap: 0.75rem;
 }
 
 .elv-test-item i {
   color: #10b981;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .elv-tests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .elv-tests-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .elv-test-item span {
