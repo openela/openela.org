@@ -1892,6 +1892,14 @@ ul {
   color: var(--blue);
 }
 
+.member-logo-v3 img {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
 .v3-member-card p {
   font-size: 0.85rem;
   color: var(--text-dim);
