@@ -354,6 +354,15 @@ ul {
   gap: 0.75rem;
 }
 
+/* Tertiary hero action: plain text link, set apart below the buttons */
+.hero-secondary-link {
+  margin-top: 1.75rem;
+}
+
+.hero-secondary-link .text-link {
+  font-size: 0.95rem;
+}
+
 /* Stat bar */
 .stat-bar {
   display: flex;
