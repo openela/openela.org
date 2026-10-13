@@ -270,7 +270,9 @@ ul {
 /* ─── Hero ───────────────────────────────────────── */
 .hero {
   padding: 7rem 0 7rem;
-  background: var(--hero-bg);
+  /* Same tint as the other page heroes at the top, deepening toward the
+     hairline so the band reads as a distinct surface above the white Pillars. */
+  background: linear-gradient(180deg, var(--hero-bg) 0%, #e1ebfa 100%);
   border-bottom: 1px solid var(--border);
   overflow: hidden;
   text-align: center;
