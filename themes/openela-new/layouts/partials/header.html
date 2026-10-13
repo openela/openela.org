@@ -12,9 +12,9 @@
         </div>
         <nav class="navbar-menu" id="nav-links">
             {{ range .Site.Params.navbar }}
-            <a href="{{ .url }}" class="navbar-item">{{ .title }}</a>
+            <a href="{{ .url | relURL }}" class="navbar-item">{{ .title }}</a>
             {{ end }}
-            <a href="/join" class="button is-primary">Join</a>
+            <a href="{{ "/join" | relURL }}" class="button is-primary">Join</a>
         </nav>
     </div>
 </header>
