@@ -858,6 +858,16 @@ ul {
   gap: 0.75rem;
 }
 
+/* Tertiary CTA action: plain text link below the two buttons, white on the dark box */
+.cta-secondary-link {
+  margin-top: 1.75rem;
+}
+
+.cta-secondary-link .text-link {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
 /* ─── Footer ─────────────────────────────────────── */
 .footer {
   background: var(--dark);
