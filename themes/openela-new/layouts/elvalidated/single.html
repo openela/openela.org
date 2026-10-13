@@ -1,16 +1,12 @@
 {{ define "main" }}
 <div class="elv-page-redesign">
     <!-- Hero Section -->
-    <header class="sources-hero text-center">
-        <div class="container">
-            <span class="sources-eyebrow">Project ELValidated</span>
-            <h1 class="sources-title">The Open Standard for<br>EL Interoperability</h1>
-            <p class="sources-subtitle">Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.</p>
-            <div style="margin-top: 2rem;">
-                <a href="https://github.com/openela/ELValidated" class="button is-primary">Validate Your Software Today</a>
-            </div>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "Project ELValidated"
+        "title" "The Open Standard for<br>EL Interoperability"
+        "subtitle" "Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs."
+        "ctas" (slice
+            (dict "text" "Validate Your Software Today" "url" "https://github.com/openela/ELValidated" "external" true))) }}
 
     <!-- About Section -->
     <section class="elv-section">

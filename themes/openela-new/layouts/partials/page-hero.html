@@ -1,13 +1,20 @@
 {{/*
-  Shared page hero — the same treatment used on the News index.
-  Params: badge (optional), title (required), subtitle (optional, may contain HTML).
+  Shared page hero — the same treatment on every interior page.
+  Params: badge (optional), title (required, may contain <br>), subtitle (optional, may contain HTML),
+          ctas (optional slice of dicts: text, url, variant [is-primary], external [false]).
 */}}
 <header class="v3-hero">
     <div class="container">
         <div class="hero-text">
             {{ with .badge }}<span class="v3-badge">{{ . }}</span>{{ end }}
-            <h1>{{ .title }}</h1>
+            <h1>{{ .title | safeHTML }}</h1>
             {{ with .subtitle }}<p>{{ . | safeHTML }}</p>{{ end }}
+            {{ with .ctas }}
+            <div class="hero-buttons">
+                {{ range . }}<a href="{{ .url }}" class="button {{ .variant | default "is-primary" }}"{{ if .external }} target="_blank" rel="noopener"{{ end }}>{{ .text }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
         </div>
     </div>
 </header>

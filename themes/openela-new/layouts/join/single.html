@@ -1,17 +1,13 @@
 {{ define "main" }}
 <div class="join-page-redesign">
     <!-- Hero Section -->
-    <header class="join-hero text-center">
-        <div class="container">
-            <span class="join-eyebrow">Join the Movement</span>
-            <h1 class="join-title">Shape the Future of<br>Enterprise Linux</h1>
-            <p class="join-subtitle">OpenELA is led through transparent, community-driven governance. Join us to influence the direction of the open ecosystem.</p>
-            <div class="hero-buttons">
-                <a href="mailto:info@openela.org" class="button is-primary">Contact Membership Team</a>
-                <a href="https://join.slack.com/t/openela/shared_invite/zt-27zxu8ytd-nV5Re975p3jmldnui5XedQ" class="button is-outline" target="_blank" rel="noopener">Join us on Slack</a>
-            </div>
-        </div>
-    </header>
+    {{ partial "page-hero.html" (dict
+        "badge" "Join the Movement"
+        "title" "Shape the Future of<br>Enterprise Linux"
+        "subtitle" "OpenELA is led through transparent, community-driven governance. Join us to influence the direction of the open ecosystem."
+        "ctas" (slice
+            (dict "text" "Contact Membership Team" "url" "mailto:info@openela.org")
+            (dict "text" "Join us on Slack" "url" "https://join.slack.com/t/openela/shared_invite/zt-27zxu8ytd-nV5Re975p3jmldnui5XedQ" "variant" "is-outline" "external" true))) }}
 
     <!-- Why Join / Benefits -->
     <section class="join-benefits-section">
