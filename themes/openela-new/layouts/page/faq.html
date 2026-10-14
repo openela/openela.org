@@ -1,0 +1,112 @@
+{{ define "main" }}
+<div class="faq-page-redesign">
+    {{ partial "page-hero.html" (dict
+        "badge" "FAQ"
+        "title" "Frequently Asked Questions"
+        "subtitle" "Have questions? We're here to help.") }}
+
+    <section class="faq-body-redesign">
+        <div class="container">
+            <div class="faq-accordion-redesign" id="faq-accordion">
+                <!-- Content parsed by JS -->
+            </div>
+            <div class="faq-raw-content" style="display:none;">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const rawContent = document.querySelector('.faq-raw-content');
+    const accordion = document.getElementById('faq-accordion');
+    
+    if (!rawContent || !accordion) return;
+
+    const nodes = Array.from(rawContent.childNodes);
+    let currentFaq = null;
+    
+    nodes.forEach(node => {
+        if (node.nodeName === 'H4') {
+            currentFaq = document.createElement('div');
+            currentFaq.className = 'faq-item-redesign';
+            
+            const questionBtn = document.createElement('button');
+            questionBtn.className = 'faq-question-btn';
+            
+            const questionText = document.createElement('span');
+            questionText.className = 'faq-question-text';
+            questionText.textContent = node.textContent;
+            
+            const iconWrapper = document.createElement('span');
+            iconWrapper.className = 'faq-icon-wrapper';
+            iconWrapper.innerHTML = `
+                <svg class="faq-plus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <svg class="faq-minus-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            `;
+
+            questionBtn.appendChild(questionText);
+            questionBtn.appendChild(iconWrapper);
+            
+            const answerContainer = document.createElement('div');
+            answerContainer.className = 'faq-answer-container';
+            
+            const answer = document.createElement('div');
+            answer.className = 'faq-answer-content';
+            
+            answerContainer.appendChild(answer);
+            currentFaq.appendChild(questionBtn);
+            currentFaq.appendChild(answerContainer);
+            
+            accordion.appendChild(currentFaq);
+            
+            // Interaction logic
+            const thisFaq = currentFaq;
+            questionBtn.addEventListener('click', function() {
+                const isActive = thisFaq.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item-redesign').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer-container').style.maxHeight = null;
+                    item.querySelector('.faq-plus-icon').style.display = 'block';
+                    item.querySelector('.faq-minus-icon').style.display = 'none';
+                });
+                
+                // Open if it wasn't active
+                if (!isActive) {
+                    thisFaq.classList.add('active');
+                    answerContainer.style.maxHeight = answer.scrollHeight + 40 + "px";
+                    this.querySelector('.faq-plus-icon').style.display = 'none';
+                    this.querySelector('.faq-minus-icon').style.display = 'block';
+                }
+            });
+            
+        } else if (currentFaq && (node.nodeName === 'P' || node.nodeName === 'UL' || node.nodeName === 'LI')) {
+            // Append paragraphs and lists to the active answer
+            currentFaq.querySelector('.faq-answer-content').appendChild(node.cloneNode(true));
+        } else if (node.nodeName === 'H3' || node.nodeName === 'P' || node.nodeName === 'UL' || node.nodeName === 'A') {
+            // Handle content that is not part of a question (like category headers or standalone text)
+            let clone = node.cloneNode(true);
+            let appended = false;
+            if (node.nodeName === 'H3') {
+                clone.className = 'faq-category-header-redesign';
+                currentFaq = null; // Reset current FAQ when a new category starts
+            } else if (node.nodeName === 'P') {
+                clone.className = 'faq-standalone-text';
+                if(!currentFaq) {
+                     accordion.appendChild(clone);
+                     appended = true;
+                }
+            }
+            if (!currentFaq && node.nodeName !== '#text' && !appended) {
+                accordion.appendChild(clone);
+            }
+        }
+    });
+});
+</script>
+{{ end }}

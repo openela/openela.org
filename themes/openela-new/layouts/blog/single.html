@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="blog-single-redesign">
+    <header class="blog-single-hero text-center">
+        <div class="container">
+            <div class="blog-meta-single">
+                <span class="blog-category">Blog</span>
+                <span class="blog-sep">•</span>
+                <time class="blog-date-single">{{ .Date.Format "January 2, 2006" }}</time>
+            </div>
+            <h1 class="blog-single-title">{{ .Title }}</h1>
+            {{ with .Description }}
+            <p class="blog-single-excerpt">{{ . }}</p>
+            {{ end }}
+        </div>
+    </header>
+
+    <div class="blog-single-content-wrapper">
+        <div class="container">
+            <div class="blog-content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</article>
+{{ end }}

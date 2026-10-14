@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="blog-page-redesign">
+    <!-- Hero Section -->
+    <header class="blog-hero text-center">
+        <div class="container">
+            <span class="blog-eyebrow">OpenELA Blog</span>
+            <h1 class="blog-title">Insights & Articles</h1>
+            <p class="blog-subtitle">Read the latest technical deep-dives, project history, and ecosystem insights from the OpenELA team.</p>
+        </div>
+    </header>
+
+    <section class="blog-list-section">
+        <div class="container">
+            <div class="blog-grid">
+                {{ range .Pages.ByDate.Reverse }}
+                <article class="blog-card">
+                    <a href="{{ .RelPermalink }}" class="blog-card-link" aria-label="Read {{ .Title }}"></a>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        </div>
+                        <h2 class="blog-card-title">{{ .Title }}</h2>
+                        <p class="blog-card-summary">{{ .Summary | truncate 140 }}</p>
+                        <span class="blog-read-more">Read Article &rarr;</span>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

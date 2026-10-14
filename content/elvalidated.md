@@ -1,7 +1,7 @@
 ---
-title: "ELValidated: The Definitive Test Suite for Enterprise Linux Compatibility"
-include_footer: true
-sidebar: false
+title: "ELValidated Compatibility Test Suite"
+description: ELValidated is the OpenELA open source test suite for Enterprise Linux ABI compatibility. Validate your software once and run it on every compatible distribution.
+type: "elvalidated"
 ---
 
 Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.  
