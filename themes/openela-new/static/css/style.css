@@ -3305,6 +3305,10 @@ ul {
 }
 
 /* ─── Global Responsive Overrides ─── */
+.navbar-join {
+  display: none;
+}
+
 .navbar-burger {
   display: none;
   cursor: pointer;
@@ -3389,6 +3393,32 @@ ul {
     width: calc(100% - 4rem);
     text-align: center;
     justify-content: center;
+  }
+
+  .navbar-join {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .navbar-burger {
+    margin-left: 0;
+  }
+
+  .navbar-menu .button {
+    display: none;
+  }
+
+  @media (max-width: 350px) {
+    .navbar-join {
+      display: none;
+    }
+
+    .navbar-menu .button {
+      display: inline-flex;
+    }
   }
 
   /* Typography */
