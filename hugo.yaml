@@ -1,13 +1,25 @@
 ---
 baseURL: https://openela.org/
 locale: en-us
-title: OpenEL Association
+title: OpenELA
 
 theme: openela-new
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+
+outputFormats:
+  llms:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
 
 outputs:
   home:
     - html
+    - llms
   section:
     - html
     - rss
@@ -27,7 +39,9 @@ markup:
 
 params:
   openGraph: true
-  description: OpenELA
+  description: The Open Enterprise Linux Association, founded by CIQ, Oracle, and SUSE, provides free Enterprise Linux source code and the ELValidated compatibility standard.
+  images:
+    - images/og-default.png
   navbarlogo:
     image: images/logos/openELA.svg
     link: /

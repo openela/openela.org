@@ -1,5 +1,6 @@
 ---
-title: OpenELA Frequently Asked Questions
+title: Frequently Asked Questions
+description: Answers to common questions about OpenELA, including what it is, how it relates to RHEL, what ELValidated does, licensing, security updates, and how to get involved.
 include_footer: true
 sidebar: false
 layout: faq

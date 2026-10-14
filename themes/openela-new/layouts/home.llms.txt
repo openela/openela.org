@@ -1,0 +1,34 @@
+# OpenELA
+
+> {{ site.Params.description }}
+
+OpenELA, the Open Enterprise Linux Association, is a non-profit trade association founded in August 2023 by CIQ, Oracle, and SUSE. It maintains freely available, redistributable Enterprise Linux source code that is compatible with Red Hat Enterprise Linux, and publishes ELValidated, an open source test suite that defines Enterprise Linux ABI compatibility. OpenELA does not ship a binary distribution. Downstream distributions such as Rocky Linux, Oracle Linux, and SUSE Multi-Linux Support build from its sources. Everything OpenELA publishes is open source and governed through a Board, a Technical Steering Committee, and community working groups.
+
+## Pages
+
+{{ range slice "about" "elvalidated" "sources" "supporting-tools" "join" "faq" }}{{ with site.GetPage . }}- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{ end }}{{ end }}
+## News
+
+{{ range (where site.RegularPages "Section" "news").ByDate.Reverse }}{{ if ne .Layout "archive" }}- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace | truncate 200 }}
+{{ end }}{{ end }}
+## Blog
+
+{{ range (where site.RegularPages "Section" "blog").ByDate.Reverse }}- [{{ .Title }}]({{ .Permalink }}) ({{ .Date.Format "2006-01-02" }}): {{ .Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace | truncate 200 }}
+{{ end }}
+## Source code and projects
+
+- [Enterprise Linux source repositories](https://github.com/orgs/openela-main/repositories): Package sources for the OpenELA Enterprise Linux distribution.
+- [OpenELA on GitHub](https://github.com/openela): Tools, documentation, and project repositories.
+- [Governance](https://github.com/openela/governance): Charter, bylaws, and governance documents.
+- [ELValidated](https://github.com/openela/Compatibility): The Enterprise Linux ABI compatibility test suite.
+- [Mothership](https://github.com/openela/mothership): Tools and services to archive RPM package sources and attest to their authenticity.
+- [Leapp](https://github.com/oamg/leapp): In-place upgrade tooling for moving workloads to newer Enterprise Linux versions.
+- [End user documentation](https://github.com/openela/openela-documentation): Documentation sources for Enterprise Linux users.
+- [Linux 4.14 long term support](https://github.com/openela/kernel-lts/tree/linux-4.14.y): Kernel maintenance after upstream community support ended.
+
+## Contact
+
+- Email: info@openela.org
+- News feed: {{ "news/index.xml" | absURL }}
+- Social: {{ range $i, $s := site.Params.footer.socialmedia }}{{ if $i }}, {{ end }}[{{ $s.name }}]({{ $s.link }}){{ end }}

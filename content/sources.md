@@ -1,5 +1,6 @@
 ---
-title: "Explore the Enterprise Linux Source"
+title: "Enterprise Linux Sources"
+description: Browse the OpenELA public Enterprise Linux source repositories. Build from source, contribute patches, or maintain your own derived distribution.
 layout: "sources"
 type: page
 ---

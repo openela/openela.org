@@ -1,5 +1,6 @@
 ---
 title: About
+description: How OpenELA stewards open Enterprise Linux source, the ELValidated compatibility standard, and open governance with founding members CIQ, Oracle, and SUSE.
 layout: about
 type: page
 include_footer: true

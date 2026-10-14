@@ -1,5 +1,6 @@
 ---
 title: Supporting Tools
+description: Tools maintained by the OpenELA community, including Mothership for source archiving and attestation and Leapp for in-place Enterprise Linux upgrades.
 layout: supporting-tools
 type: page
 include_footer: true
