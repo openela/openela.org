@@ -1,0 +1,67 @@
+{{- /*
+  Structured data (JSON-LD). Every page gets the Organization and WebSite
+  nodes; the page node varies by kind. OpenELA's founding members are
+  modelled as Organizations linked both ways (founder/member <-> memberOf).
+*/ -}}
+{{- $base := .Site.BaseURL -}}
+{{- $orgId := printf "%s#organization" $base -}}
+{{- $siteId := printf "%s#website" $base -}}
+{{- $logo := "images/logos/openELA.svg" | absURL -}}
+{{- $orgDesc := "The Open Enterprise Linux Association (OpenELA) is a collaborative trade association founded by CIQ, Oracle, and SUSE to provide open, free Enterprise Linux source code and the ELValidated compatibility standard for downstream distributions." -}}
+
+{{- $members := slice
+  (dict "@type" "Organization" "@id" "https://ciq.com/#organization" "name" "CIQ" "url" "https://ciq.com/" "memberOf" (dict "@id" $orgId))
+  (dict "@type" "Organization" "@id" "https://www.oracle.com/#organization" "name" "Oracle" "url" "https://www.oracle.com/" "memberOf" (dict "@id" $orgId))
+  (dict "@type" "Organization" "@id" "https://www.suse.com/#organization" "name" "SUSE" "url" "https://www.suse.com/" "memberOf" (dict "@id" $orgId))
+-}}
+{{- $memberRefs := slice -}}
+{{- range $members }}{{ $memberRefs = $memberRefs | append (dict "@id" (index . "@id")) }}{{ end -}}
+{{- $sameAs := slice -}}
+{{- range .Site.Params.footer.socialmedia }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+
+{{- $org := dict
+  "@type" "Organization" "@id" $orgId
+  "name" "Open Enterprise Linux Association" "alternateName" "OpenELA"
+  "url" $base "logo" (dict "@type" "ImageObject" "url" $logo)
+  "description" $orgDesc "foundingDate" "2023-08-10" "email" "info@openela.org"
+  "sameAs" $sameAs "founder" $memberRefs "member" $memberRefs
+-}}
+{{- $website := dict "@type" "WebSite" "@id" $siteId "url" $base "name" "OpenELA" "publisher" (dict "@id" $orgId) -}}
+
+{{- $desc := .Description -}}
+{{- if not $desc }}{{ if .IsHome }}{{ $desc = $orgDesc }}{{ else }}{{ $desc = .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 200 }}{{ end }}{{ end -}}
+{{- $file := "" }}{{ with .File }}{{ $file = .ContentBaseName }}{{ end -}}
+
+{{- $page := dict "@id" .Permalink "url" .Permalink "name" (cond .IsHome "OpenELA" .Title) "description" $desc "isPartOf" (dict "@id" $siteId) "about" (dict "@id" $orgId) -}}
+{{- $type := "WebPage" -}}
+{{- if eq .Layout "faq" -}}
+  {{- $type = "FAQPage" -}}
+  {{- $faqs := slice -}}
+  {{- range after 1 (split .RawContent "#### ") -}}
+    {{- $q := strings.TrimSpace (index (split . "\n") 0) -}}
+    {{- $rest := index (split (replaceRE "^[^\n]*\n?" "" .) "### ") 0 -}}
+    {{- $a := $rest | markdownify | plainify | htmlUnescape | strings.TrimSpace -}}
+    {{- $faqs = $faqs | append (dict "@type" "Question" "name" $q "acceptedAnswer" (dict "@type" "Answer" "text" $a)) -}}
+  {{- end -}}
+  {{- $page = merge $page (dict "mainEntity" $faqs) -}}
+{{- else if eq $file "about" -}}
+  {{- $type = "AboutPage" -}}
+{{- else if and .IsPage (in (slice "news" "blog") .Section) (ne .Layout "archive") -}}
+  {{- $type = cond (eq .Section "news") "NewsArticle" "BlogPosting" -}}
+  {{- $authorName := .Params.author | default "OpenELA" -}}
+  {{- $author := cond (in $authorName "OpenELA") (dict "@type" "Organization" "name" $authorName) (dict "@type" "Person" "name" $authorName) -}}
+  {{- $page = merge $page (dict
+    "headline" .Title
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" $author "publisher" (dict "@id" $orgId)
+    "mainEntityOfPage" .Permalink "image" $logo) -}}
+{{- else if eq .Kind "section" -}}
+  {{- $type = "CollectionPage" -}}
+{{- end -}}
+{{- $page = merge $page (dict "@type" $type) -}}
+
+{{- $graph := slice $org $website -}}
+{{- range $members }}{{ $graph = $graph | append . }}{{ end -}}
+{{- $graph = $graph | append $page -}}
+<script type="application/ld+json">{{ jsonify (dict "indent" "  ") (dict "@context" "https://schema.org" "@graph" $graph) | safeJS }}</script>
