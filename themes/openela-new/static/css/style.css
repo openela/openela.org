@@ -830,7 +830,7 @@ ul {
 
 .cta-box {
   background: var(--dark-mid);
-  padding: 6rem 2rem;
+  padding: 6rem 0;
   text-align: center;
 }
 
