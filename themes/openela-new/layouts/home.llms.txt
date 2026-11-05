@@ -21,7 +21,7 @@ OpenELA, the Open Enterprise Linux Association, is a non-profit trade associatio
 - [Enterprise Linux source repositories](https://github.com/orgs/openela-main/repositories): Package sources for the OpenELA Enterprise Linux distribution.
 - [OpenELA on GitHub](https://github.com/openela): Tools, documentation, and project repositories.
 - [Governance](https://github.com/openela/governance): Charter, bylaws, and governance documents.
-- [ELValidated](https://github.com/openela/Compatibility): The Enterprise Linux ABI compatibility test suite.
+- [ELValidated](https://github.com/openela/ELValidated): The Enterprise Linux ABI compatibility test suite.
 - [Mothership](https://github.com/openela/mothership): Tools and services to archive RPM package sources and attest to their authenticity.
 - [Leapp](https://github.com/oamg/leapp): In-place upgrade tooling for moving workloads to newer Enterprise Linux versions.
 - [End user documentation](https://github.com/openela/openela-documentation): Documentation sources for Enterprise Linux users.

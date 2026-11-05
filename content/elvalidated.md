@@ -5,7 +5,7 @@ type: "elvalidated"
 ---
 
 Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.  
-[**Validate Your Software Today**](https://github.com/openela/Compatibility)
+[**Validate Your Software Today**](https://github.com/openela/ELValidated)
 
 ## What Is ELValidated?
 
@@ -68,7 +68,7 @@ Shipping same application compatible with all of your target distributions, mini
 
 ELValidated ensures your software works everywhere Enterprise Linux runs.
 
-1. [Download ELValidated](https://github.com/openela/Compatibility)
+1. [Download ELValidated](https://github.com/openela/ELValidated)
 2. Run your first scan in minutes
 3. Get a clear report
 
