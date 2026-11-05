@@ -1966,6 +1966,10 @@ ul {
   margin: 0;
 }
 
+.v3-member-card p + p {
+  margin-top: 1rem;
+}
+
 /* Governance Vertical Tabs */
 .gov-structure-v3 {
   background: #fff;

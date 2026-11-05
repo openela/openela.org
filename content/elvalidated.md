@@ -43,14 +43,12 @@ ELValidated sets a common baseline for application compatibility across Enterpri
 
 * Oracle Linux
 * Rocky Linux
-* SUSE Linux Enterprise
-
-... and more are on the way.
+* SUSE Multi-Linux Support
 
 ## For ISVs: Validate Once, Run Everywhere
 
 **Expand your reach**  
-Ship one build that works across Rocky Linux, SUSE Multi-Linux, Oracle Linux, and others.
+Ship one build that works across Rocky Linux, SUSE Multi-Linux Support, Oracle Linux, and others.
 
 **Accelerate Release Cycles**  
 Validate on new OS versions early—no waiting on full vendor QA loops.
