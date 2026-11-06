@@ -1,11 +1,11 @@
 ---
-title: "ELValidated: The Definitive Test Suite for Enterprise Linux Compatibility"
-include_footer: true
-sidebar: false
+title: "ELValidated Compatibility Test Suite"
+description: ELValidated is the OpenELA open source test suite for Enterprise Linux ABI compatibility. Validate your software once and run it on every compatible distribution.
+type: "elvalidated"
 ---
 
 Powered by the OpenELA community, ELValidated is the cross-distro framework that proves your apps work—everywhere Enterprise Linux runs.  
-[**Validate Your Software Today**](https://github.com/openela/Compatibility)
+[**Validate Your Software Today**](https://github.com/openela/ELValidated)
 
 ## What Is ELValidated?
 
@@ -43,14 +43,12 @@ ELValidated sets a common baseline for application compatibility across Enterpri
 
 * Oracle Linux
 * Rocky Linux
-* SUSE Linux Enterprise
-
-... and more are on the way.
+* SUSE Multi-Linux Support
 
 ## For ISVs: Validate Once, Run Everywhere
 
 **Expand your reach**  
-Ship one build that works across Rocky Linux, SUSE Multi-Linux, Oracle Linux, and others.
+Ship one build that works across Rocky Linux, SUSE Multi-Linux Support, Oracle Linux, and others.
 
 **Accelerate Release Cycles**  
 Validate on new OS versions early—no waiting on full vendor QA loops.
@@ -68,7 +66,7 @@ Shipping same application compatible with all of your target distributions, mini
 
 ELValidated ensures your software works everywhere Enterprise Linux runs.
 
-1. [Download ELValidated](https://github.com/openela/Compatibility)
+1. [Download ELValidated](https://github.com/openela/ELValidated)
 2. Run your first scan in minutes
 3. Get a clear report
 

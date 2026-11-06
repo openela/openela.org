@@ -1,0 +1,8 @@
+name = "OpenELA New"
+license = "MIT"
+licenselink = "https://github.com/openela/openela.org/blob/main/LICENSE"
+description = "A custom Hugo theme for OpenELA"
+homepage = "https://openela.org/"
+[author]
+  name = "OpenELA"
+  homepage = "https://openela.org/"

@@ -1,0 +1,23 @@
+{{- if ne (urls.Parse site.BaseURL).Host "openela.org" -}}
+User-agent: *
+Disallow: /
+{{- else -}}
+User-agent: *
+Allow: /
+
+# Training crawlers
+{{ range slice "GPTBot" "CCBot" "anthropic-ai" "ClaudeBot" "Amazonbot" "Applebot-Extended" "Bytespider" "cohere-ai" "Diffbot" "DuckAssistBot" "ImagesiftBot" "Meta-ExternalAgent" "Omgilibot" "PanguBot" "Timpibot" "YouBot" -}}
+User-agent: {{ . }}
+Allow: /
+
+{{ end -}}
+# Live retrieval / user-initiated
+{{ range slice "Google-Extended" "Claude-User" "Claude-SearchBot" "ChatGPT-User" "OAI-SearchBot" "PerplexityBot" "Perplexity-User" -}}
+User-agent: {{ . }}
+Allow: /
+
+{{ end -}}
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# LLMs.txt: {{ "llms.txt" | absURL }}
+{{- end }}
